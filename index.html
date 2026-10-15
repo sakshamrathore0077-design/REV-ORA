@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reviora Ornaments — Small details. Big style.</title>
+<meta name="description" content="Reviora Ornaments — minimal jewellery & ornaments for women. Order via Instagram DM @revioraornaments." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#FFFDF9" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Reviora Ornaments" />
+<meta property="og:title" content="Reviora Ornaments — Small details. Big style." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23A68A5B' d='M12 0C12.9 6.9 17.1 11.1 24 12C17.1 12.9 12.9 17.1 12 24C11.1 17.1 6.9 12.9 0 12C6.9 11.1 11.1 6.9 12 0Z'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#F6EFE5;color:#4A3B2A;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+  ::selection{background:rgba(166,138,91,.25)}
+  :focus-visible{outline:2px solid #A68A5B;outline-offset:2px;border-radius:4px}
+  .no-scrollbar::-webkit-scrollbar{display:none}
+  .no-scrollbar{scrollbar-width:none}
+  @keyframes sk{to{background-position:-200% 0}}
+  .skeleton{background:linear-gradient(110deg,#EDE3D2 30%,#F7F1E6 50%,#EDE3D2 70%);background-size:200% 100%;animation:sk 1.4s linear infinite}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .fade-up{animation:fadeUp .55s ease both}
+  @keyframes twinkle{0%,100%{opacity:.35}50%{opacity:1}}
+  .twinkle{animation:twinkle 3.4s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+  .floaty{animation:floaty 8s ease-in-out infinite}
+  .floaty-slow{animation:floaty 11s ease-in-out infinite}
+  @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+  .shimmer-text{background:linear-gradient(90deg,rgba(255,253,249,.75) 30%,#fff 50%,rgba(255,253,249,.75) 70%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 5s linear infinite}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.6,.2,1),transform .75s cubic-bezier(.2,.6,.2,1)}
+  .reveal.is-visible{opacity:1;transform:none}
+  .hero-scrub-wrap{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+  .hero-scrub-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;will-change:opacity;transition:opacity .18s ease}
+  .hero-content-z{position:relative;z-index:2}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .twinkle,.floaty,.floaty-slow{animation:none}
+    .hero-scrub-img{transition:none}
+  }
+  .zoom-img{transition:transform .8s cubic-bezier(.2,.6,.2,1)}
+  .zoom-hover:hover .zoom-img{transform:scale(1.14)}
+  .zoom-hover{cursor:zoom-in}
+  .prose p{margin:0 0 1rem;line-height:1.85;color:#5b4a36}
+  .prose ul{margin:0 0 1.25rem;padding:0;list-style:none}
+  .prose li{position:relative;padding-left:1.35rem;margin-bottom:.65rem;line-height:1.75;color:#5b4a36}
+  .prose li::before{content:'✦';position:absolute;left:0;top:.1rem;color:#A68A5B;font-size:.7rem}
+  .prose h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.7rem;color:#4A3B2A;margin:2.25rem 0 .75rem}
+  .prose strong{color:#4A3B2A}
+</style>
+</head>
+<body>
+<noscript><p style="padding:2rem;text-align:center">Reviora Ornaments — please enable JavaScript. Find us on Instagram: @revioraornaments</p></noscript>
+
+<div id="root">
+  <div id="boot-loading" style="min-height:70vh;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;letter-spacing:.35em;color:#4A3B2A">REVÍORA&nbsp;·&nbsp;LOADING…</div>
+  <div id="boot-error" style="display:none;min-height:70vh;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;gap:12px">
+    <p style="font-family:Georgia,serif;font-size:26px">Couldn't load the website libraries.</p>
+    <p style="font-size:14px;color:#6b5a45">Please check your internet connection and refresh the page.</p>
+  </div>
+</div>
+
+<!-- ==================== APP SOURCE ==================== -->
+<script type="text/reviora-app" id="reviora-app">
+const { useState, useEffect, useMemo, useRef, useContext, createContext } = React;
+
+const LOGO_URL  = '';
+
+const ENV = {
+  VITE_API_BASE_URL: window.__REVIORA_ENV__?.VITE_API_BASE_URL || '',
+  VITE_SITE_URL: window.__REVIORA_ENV__?.VITE_SITE_URL || '',
+  VITE_INSTAGRAM_USERNAME: window.__REVIORA_ENV__?.VITE_INSTAGRAM_USERNAME || 'revioraornaments',
+};
+const BRAND = { name:'REVÍORA ORNAMENTS', shortName:'REVÍORA', tagline:'Small details. Big style.', currencySymbol:'₹' };
+const INSTAGRAM_USERNAME = ENV.VITE_INSTAGRAM_USERNAME;
+/* Profile URL = brand page; DM URL = opens the chat thread directly */
+const INSTAGRAM_PROFILE_URL = `https://www.instagram.com/${INSTAGRAM_USERNAME}/`;
+const SITE_NAME = 'Reviora Ornaments';
+const DEFAULT_TITLE = 'Reviora Ornaments — Small details. Big style.';
+const DEFAULT_DESCRIPTION = 'Minimal jewellery & ornaments for women. Order via Instagram DM @revioraornaments.';
+
+const formatPrice = (n) => BRAND.currencySymbol + new Intl.NumberFormat('en-IN').format(n);
+const cx = (...a) => a.filter(Boolean).join(' ');
+const Analytics = { track(e, p = {}) { if (window.__REVIORA_DEBUG__) console.info('[analytics]', e, p); } };
+
+const InstagramService = {
+  profileUrl() { return INSTAGRAM_PROFILE_URL; },
+  /* ig.me/m/<user> opens the DM thread with the account directly —
+     the fastest Instagram allows a website to reach a DM. */
+  dmUrl() { return `https://ig.me/m/${INSTAGRAM_USERNAME}`; },
+};
+
+/* ================= PRODUCTS (image:'' → line-art placeholder) ================= */
+const PRODUCTS = [
+  { id:'rv001', sku:'RV001', name:'Mermaid Pearl Pendant', slug:'mermaid-pearl-pendant', category:'Necklaces', subcategory:'Pendant', price:299, currency:'INR', image:'', art:'necklace',
+    description:'A sculpted mermaid-tail pendant set inside a sparkling hoop, finished with a single soft pearl. Made for the ones who move through life like water.',
+    material:'Gold-tone alloy, pearl finish, cubic zirconia', care:'Keep dry. Wipe gently after use. Store in the pouch provided.',
+    stock:6, active:true, featured:true, bestseller:true, newArrival:false, createdAt:'2025-11-02' },
+  { id:'rv002', sku:'RV002', name:'Lavender Heart Pendant', slug:'lavender-heart-pendant', category:'Necklaces', subcategory:'Pendant', price:249, currency:'INR', image:'', art:'necklace',
+    description:'A soft lilac heart caught in delicate prongs — small, sweet and impossible to miss.',
+    material:'Gold-tone alloy, lavender cubic zirconia', care:'Keep away from perfume and water. Wipe with a soft cloth.',
+    stock:8, active:true, featured:true, bestseller:false, newArrival:true, createdAt:'2026-01-08' },
+  { id:'rv003', sku:'RV003', name:'Pearl Drop Chain', slug:'pearl-drop-chain', category:'Necklaces', subcategory:'Pearl', price:199, currency:'INR', image:'', art:'necklace',
+    description:'One perfect pearl on the most minimal chain. The kind of piece you never really take off.',
+    material:'Gold-tone alloy, pearl finish', care:'Keep dry. Avoid contact with perfume.',
+    stock:10, active:true, featured:true, bestseller:true, newArrival:false, createdAt:'2025-10-18' },
+  { id:'rv004', sku:'RV004', name:'Golden Bloom Studs', slug:'golden-bloom-studs', category:'Earrings', subcategory:'Studs', price:179, currency:'INR', image:'', art:'earrings',
+    description:'Tiny five-petal blooms with a golden centre. Light enough to forget, pretty enough to remember.',
+    material:'Gold-tone alloy', care:'Remove before sleeping. Store flat in the pouch.',
+    stock:12, active:true, featured:false, bestseller:false, newArrival:true, createdAt:'2026-01-12' },
+  { id:'rv005', sku:'RV005', name:'Moonlight Hoops', slug:'moonlight-hoops', category:'Earrings', subcategory:'Hoops', price:219, currency:'INR', image:'', art:'earrings',
+    description:'Slim golden hoops with a soft pearl drop — an heirloom feeling, without the heirloom budget.',
+    material:'Gold-tone alloy, pearl finish', care:'Keep dry. Wipe after wear.',
+    stock:9, active:true, featured:false, bestseller:false, newArrival:false, createdAt:'2025-12-01' },
+  { id:'rv006', sku:'RV006', name:'Aura Cuff Bracelet', slug:'aura-cuff-bracelet', category:'Bracelets', subcategory:'Cuff', price:259, currency:'INR', image:'', art:'bracelet',
+    description:'A smooth open cuff with a single orbital charm. Stack it, or let it speak alone.',
+    material:'Gold-tone alloy', care:'Bend gently to adjust. Avoid water.',
+    stock:7, active:true, featured:true, bestseller:true, newArrival:false, createdAt:'2025-11-22' },
+  { id:'rv007', sku:'RV007', name:'Infinity Band Ring', slug:'infinity-band-ring', category:'Rings', subcategory:'Band', price:149, currency:'INR', image:'', art:'ring',
+    description:'A clean twisted band that catches the light beautifully. Understated, every single day.',
+    material:'Stainless steel, gold-tone finish', care:'Water-friendly. Wipe to keep shine.',
+    stock:14, active:true, featured:false, bestseller:true, newArrival:false, createdAt:'2025-11-30' },
+  { id:'rv008', sku:'RV008', name:'Whisper Rope Chain', slug:'whisper-rope-chain', category:'Chains', subcategory:'Rope', price:329, currency:'INR', image:'', art:'chain',
+    description:'A whisper-thin rope chain with finely twisted links — delicate alone, dreamy layered.',
+    material:'Gold-tone alloy', care:'Keep dry. Wipe after wear.',
+    stock:6, active:true, featured:false, bestseller:true, newArrival:false, createdAt:'2025-10-25' },
+  { id:'rv009', sku:'RV009', name:'Velvet Onyx Ring', slug:'velvet-onyx-ring', category:'Rings', subcategory:'Gemstone', price:299, currency:'INR', image:'', art:'ring',
+    description:'A slim gold band with a polished black onyx — a little mystery for your favourite finger.',
+    material:'Gold-tone alloy, natural onyx stone', care:'Avoid scratches. Wipe clean.',
+    stock:4, active:true, featured:true, bestseller:false, newArrival:true, createdAt:'2026-01-15' },
+  { id:'rv010', sku:'RV010', name:'Angel Wing Pendant', slug:'angel-wing-pendant', category:'Necklaces', subcategory:'Pendant', price:229, currency:'INR', image:'', art:'necklace',
+    description:"A tiny golden wing dusted with crystals — for the girl who's someone's guardian angel.",
+    material:'Gold-tone alloy, cubic zirconia', care:'Keep dry. Wipe gently.',
+    stock:5, active:true, featured:false, bestseller:false, newArrival:false, createdAt:'2025-12-10' },
+  { id:'rv011', sku:'RV011', name:'Starlight Anklet', slug:'starlight-anklet', category:'Other Accessories', subcategory:'Anklet', price:189, currency:'INR', image:'', art:'anklet',
+    description:'A delicate chain with scattered star charms. Sunshine not included.',
+    material:'Gold-tone alloy', care:'Keep dry. Remove before swimming.',
+    stock:11, active:true, featured:false, bestseller:false, newArrival:true, createdAt:'2026-01-18' },
+  { id:'rv012', sku:'RV012', name:'Vintage Pearl Choker', slug:'vintage-pearl-choker', category:'Necklaces', subcategory:'Pearl', price:399, currency:'INR', image:'', art:'necklace',
+    description:'A classic strand of lustrous pearls at the base of your neck. Timeless, always.',
+    material:'Shell pearls, gold-tone clasp', care:'Wipe after wear. Store flat.',
+    stock:0, active:true, featured:true, bestseller:true, newArrival:false, createdAt:'2025-12-05' },
+  { id:'rv013', sku:'RV013', name:'Vintage Locket', slug:'vintage-locket', category:'Necklaces', subcategory:'Locket', price:349, currency:'INR', image:'', art:'necklace',
+    description:'An engraved gold locket with a hidden heart inside — keep your favourite memory close.',
+    material:'Gold-tone alloy', care:'Keep dry. Polish gently.',
+    stock:3, active:true, featured:false, bestseller:false, newArrival:true, createdAt:'2026-01-20' },
+];
+
+const CATEGORIES = [
+  { slug:'women', name:'Women', type:'gender', description:'Delicate chains, pearls and quiet sparkle — made for your everyday moments.' },
+  { slug:'necklaces', name:'Necklaces', type:'product', description:'Pendants, pearls and everyday chains that finish every neckline.' },
+  { slug:'earrings', name:'Earrings', type:'product', description:'Studs and hoops — small details with the loudest personality.' },
+  { slug:'bracelets', name:'Bracelets', type:'product', description:'Cuffs and chains for wrists that like a little shine.' },
+  { slug:'rings', name:'Rings', type:'product', description:'Bands and gems that catch the light, never the attention.' },
+  { slug:'chains', name:'Chains', type:'product', description:'Whisper-thin ropes and layers. Made to stack, made to shine.' },
+  { slug:'other-accessories', name:'Other Accessories', type:'product', description:'Anklets, charms and the little extras — find your next favourite piece.' },
+];
+const PRODUCT_CATEGORIES = CATEGORIES.filter(c => c.type === 'product');
+
+const FAQS = [
+  { q:'How do I order?', a:'Tap BUY NOW on any piece (or add pieces to your cart and tap DM TO BUY). You\'ll be taken straight to our Instagram DMs (@revioraornaments). Your order summary appears on screen — we confirm availability, total and payment right there in DMs.' },
+  { q:'Where do I place an order?', a:'All orders are placed through Instagram DM — @revioraornaments. The website is our catalogue + cart; Instagram is our checkout counter.' },
+  { q:'How does Instagram ordering work?', a:'1) Tap BUY NOW (or DM TO BUY from your cart). 2) Instagram opens directly to our DM chat. 3) Tell us what you ordered — your order summary is shown on the website, and you can screenshot it. 4) We confirm stock, shipping and the final total. 5) You pay via the details shared in DM. 6) We dispatch and keep you updated.' },
+  { q:'How do I know the price?', a:'Every product page shows the price in INR, and your cart shows a running subtotal. Your final total (including shipping, if any) is confirmed in Instagram DM before you pay — always.' },
+  { q:'How long does delivery take?', a:'[Placeholder — update before launch] Orders are usually dispatched within 1–2 business days after payment confirmation; delivery typically takes 3–7 business days. DM us for a current estimate.' },
+  { q:'Do you offer returns?', a:'[Placeholder — update before launch] Please read our Returns & Exchange page. If anything is wrong with your order, DM us with your Order ID and we will make it right.' },
+  { q:'How should I care for my jewellery?', a:'Keep pieces dry, put them on after perfume and lotion, wipe gently after wear and store them in a pouch. Full guide on our Jewellery Care page.' },
+  { q:'How do I check my order status?', a:'DM us on Instagram with your Order ID (e.g. RV-2026-0001) and we will update you on your order status.' },
+];
+
+const isProductAvailable = (p) => Boolean(p && p.active && p.stock > 0);
+const matchesQuery = (p, q) => {
+  const s = (q || '').trim().toLowerCase();
+  if (!s) return true;
+  return [p.name, p.sku, p.category, p.subcategory, p.description].filter(Boolean).join(' ').toLowerCase().includes(s);
+};
+const ProductService = {
+  async getProducts() { return PRODUCTS.filter(p => p.active); },
+  async getProductBySlug(slug) { return PRODUCTS.find(p => p.active && p.slug === slug) || null; },
+};
+
+function useAsync(fn, deps) {
+  const [state, setState] = useState({ loading: true, data: null, error: null });
+  useEffect(() => {
+    let alive = true;
+    setState({ loading: true, data: null, error: null });
+    Promise.resolve(fn())
+      .then(data => alive && setState({ loading: false, data, error: null }))
+      .catch(err => alive && setState({ loading: false, data: null, error: err }));
+    return () => { alive = false; };
+  }, deps);
+  return state;
+}
+function useSEO({ title, description } = {}) {
+  useEffect(() => {
+    document.title = title ? `${title} — ${SITE_NAME}` : DEFAULT_TITLE;
+    let el = document.head.querySelector('meta[name="description"]');
+    if (!el) { el = document.createElement('meta'); el.setAttribute('name','description'); document.head.appendChild(el); }
+    el.setAttribute('content', description || DEFAULT_DESCRIPTION);
+  }, [title, description]);
+}
+
+const RouterContext = createContext({ path: '/', query: new URLSearchParams() });
+function parseHash() {
+  const raw = window.location.hash.replace(/^#/, '') || '/';
+  const [path, qs] = raw.split('?');
+  return { path: path || '/', query: new URLSearchParams(qs || '') };
+}
+function navigate(to) { window.location.hash = to; }
+function Link({ to, children, className, onClick, ariaLabel, ...rest }) {
+  return <a href={'#' + to} className={className} onClick={onClick} aria-label={ariaLabel} {...rest}>{children}</a>;
+}
+function RouterProvider({ children }) {
+  const [route, setRoute] = useState(parseHash);
+  useEffect(() => {
+    const onChange = () => { setRoute(parseHash()); window.scrollTo(0, 0); };
+    window.addEventListener('hashchange', onChange);
+    return () => window.removeEventListener('hashchange', onChange);
+  }, []);
+  return <RouterContext.Provider value={route}>{children}</RouterContext.Provider>;
+}
+const useRoute = () => useContext(RouterContext);
+
+const CatalogContext = createContext({ products: [], loading: true, error: null });
+const useCatalog = () => useContext(CatalogContext);
+function CatalogProvider({ children }) {
+  const { loading, data, error } = useAsync(() => ProductService.getProducts(), []);
+  return <CatalogContext.Provider value={{ products: data || [], loading, error }}>{children}</CatalogContext.Provider>;
+}
+
+/* ================= TOAST =================
+   Non-blocking confirmation shown for a few seconds
+   (e.g. after Buy Now: "Order confirmed — opening Instagram DM…") */
+const ToastContext = createContext({ notify: () => {} });
+const useToast = () => useContext(ToastContext);
+function ToastProvider({ children }) {
+  const [toast, setToast] = useState(null);
+  const timer = useRef(null);
+  const notify = (msg) => {
+    setToast(msg);
+    if (timer.current) clearTimeout(timer.current);
+    timer.current = setTimeout(() => setToast(null), 5000);
+  };
+  return (
+    <ToastContext.Provider value={{ notify }}>
+      {children}
+      {toast && (
+        <div className="fixed bottom-20 left-1/2 -translate-x-1/2 z-[80] w-[calc(100%-2rem)] max-w-sm bg-cocoa text-ivory rounded-2xl px-5 py-4 shadow-xl fade-up text-sm leading-relaxed" role="status" aria-live="polite">
+          <span className="flex items-start gap-2.5">
+            <IconSparkle className="w-4 h-4 text-gold shrink-0 mt-0.5"/>
+            <span>{toast}</span>
+          </span>
+        </div>
+      )}
+    </ToastContext.Provider>
+  );
+}
+
+/* ================= BUY NOW — direct Instagram DM redirect =================
+   One tap → confirmation toast with the order summary → Instagram DM thread
+   opens in a new tab. No copy/paste step anywhere. */
+const BuyNowContext = createContext({ openBuyNow: () => {} });
+const useBuyNow = () => useContext(BuyNowContext);
+function BuyNowProvider({ children }) {
+  const { notify } = useToast();
+  const openBuyNow = (product, qty = 1) => {
+    Analytics.track('buy_now_click', { sku: product.sku });
+    notify(`Order confirmed — opening Instagram DMs ✦ ${product.name} × ${qty} · ${formatPrice(product.price * qty)}`);
+    window.open(InstagramService.dmUrl(), '_blank', 'noopener');
+  };
+  return <BuyNowContext.Provider value={{ openBuyNow }}>{children}</BuyNowContext.Provider>;
+}
+
+/* ================= CART =================
+   One add = one piece. Stacks on repeat taps.
+   Persists in localStorage. DM to Buy = direct redirect. */
+const CartContext = createContext(null);
+const useCart = () => useContext(CartContext);
+function CartProvider({ children }) {
+  const [open, setOpen] = useState(false);
+  const [raw, setRaw] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('reviora_cart') || '[]'); } catch (e) { return []; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem('reviora_cart', JSON.stringify(raw)); } catch (e) {}
+  }, [raw]);
+  const items = useMemo(() => raw.map(r => {
+    const p = PRODUCTS.find(pp => pp.id === r.id);
+    return p ? { ...p, qty: r.qty } : null;
+  }).filter(Boolean), [raw]);
+  const count = items.reduce((s, it) => s + it.qty, 0);
+  const total = items.reduce((s, it) => s + it.price * it.qty, 0);
+  const addToCart = (product) => {
+    if (!isProductAvailable(product)) return;
+    Analytics.track('add_to_cart', { sku: product.sku });
+    setRaw(prev => {
+      const found = prev.find(i => i.id === product.id);
+      if (found) return prev.map(i => i.id === product.id ? { ...i, qty: i.qty + 1 } : i);
+      return [...prev, { id: product.id, qty: 1 }];
+    });
+    setOpen(true);
+  };
+  const removeFromCart = (id) => setRaw(prev => prev.filter(i => i.id !== id));
+  const clearCart = () => setRaw([]);
+  return (
+    <CartContext.Provider value={{ items, count, total, addToCart, removeFromCart, clearCart, open, setOpen }}>
+      {children}
+      <CartDrawer/>
+    </CartContext.Provider>
+  );
+}
+function CartDrawer() {
+  const { items, count, total, removeFromCart, clearCart, open, setOpen } = useCart();
+  const { notify } = useToast();
+  useEffect(() => {
+    if (!open) return;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e) => { if (e.key === 'Escape') setOpen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => { document.body.style.overflow = ''; window.removeEventListener('keydown', onKey); };
+  }, [open, setOpen]);
+  if (!open) return null;
+  /* One tap: confirmation toast with full order summary → straight to the DM thread */
+  const dmBuy = () => {
+    Analytics.track('instagram_click', { context: 'cart_dm' });
+    const summary = items.map(it => `${it.name} × ${it.qty}`).join(', ');
+    notify(`Order confirmed — opening Instagram DMs ✦ ${summary} · Total ${formatPrice(total)}`);
+    window.open(InstagramService.dmUrl(), '_blank', 'noopener');
+    setOpen(false);
+  };
+  return (
+    <div className="fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Your cart">
+      <div className="absolute inset-0 bg-cocoa/40 backdrop-blur-sm" onClick={() => setOpen(false)}></div>
+      <div className="absolute right-0 top-0 h-full w-full max-w-md bg-ivory shadow-2xl flex flex-col fade-up">
+        <div className="flex items-center justify-between p-4 border-b border-beige/60">
+          <p className="serif text-2xl">Your Cart <span className="text-gold text-lg">({count})</span></p>
+          <button onClick={() => setOpen(false)} aria-label="Close cart" className="p-2 rounded-full hover:bg-cream"><IconClose/></button>
+        </div>
+        {items.length === 0 ? (
+          <div className="flex-1 flex flex-col items-center justify-center text-center px-6 gap-3">
+            <IconSparkle className="w-6 h-6 text-gold"/>
+            <p className="serif text-2xl">Your cart is empty.</p>
+            <p className="text-sm text-cocoa/65">Add pieces you love — then DM us to order.</p>
+            <Btn to="/shop" onClick={() => setOpen(false)}>Shop the Collection</Btn>
+          </div>
+        ) : (
+          <>
+            <div className="flex-1 overflow-y-auto px-4 py-2 divide-y divide-beige/50">
+              {items.map(item => (
+                <div key={item.id} className="flex items-center gap-3 py-3.5">
+                  <span className="block w-14 h-16 rounded-lg overflow-hidden border border-beige/70 shrink-0 bg-white">
+                    <ProductImage product={item}/>
+                  </span>
+                  <span className="flex-1 min-w-0">
+                    <Link to={`/product/${item.slug}`} onClick={() => setOpen(false)}
+                      className="serif text-lg block truncate hover:text-gold transition-colors">{item.name}</Link>
+                    <span className="text-[10px] tracking-[0.18em] uppercase text-cocoa/50">{item.sku} · × {item.qty}</span>
+                  </span>
+                  <span className="text-sm shrink-0">{formatPrice(item.price * item.qty)}</span>
+                  <button onClick={() => removeFromCart(item.id)} aria-label={`Remove ${item.name} from cart`}
+                    className="p-1.5 rounded-full text-cocoa/50 hover:text-cocoa hover:bg-cream shrink-0"><IconClose className="w-4 h-4"/></button>
+                </div>
+              ))}
+            </div>
+            <div className="border-t border-beige/60 p-4 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] tracking-[0.25em] uppercase text-cocoa/60">Subtotal</span>
+                <span className="serif text-2xl">{formatPrice(total)}</span>
+              </div>
+              <Btn variant="gold" onClick={dmBuy} className="w-full">
+                <IconInstagram className="w-4 h-4"/>DM to Buy
+              </Btn>
+              <p className="text-[10px] text-cocoa/55 text-center leading-relaxed">
+                Tapping DM to Buy takes you straight to our Instagram DMs with your order confirmed on screen.
+              </p>
+              <button onClick={clearCart}
+                className="w-full text-center text-[10px] tracking-[0.2em] uppercase text-cocoa/50 hover:text-cocoa underline underline-offset-4">
+                Clear cart
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function Reveal({ children, delay = 0, className = '' }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { el.classList.add('is-visible'); obs.disconnect(); }
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return <div ref={ref} className={cx('reveal', className)} style={{ transitionDelay: `${delay}ms` }}>{children}</div>;
+}
+
+/* ================= icons ================= */
+const IconSparkle = ({ className = 'w-4 h-4' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6.9 17.1 11.1 24 12C17.1 12.9 12.9 17.1 12 24C11.1 17.1 6.9 12.9 0 12C6.9 11.1 11.1 6.9 12 0Z"/></svg>
+);
+const IconSearch = ({ className = 'w-5 h-5' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+);
+const IconCart = ({ className = 'w-5 h-5' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M5.5 8h13l-1 11.2a2 2 0 0 1-2 1.8H8.5a2 2 0 0 1-2-1.8L5.5 8Z"/>
+    <path d="M9 10V6a3 3 0 0 1 6 0v4"/>
+  </svg>
+);
+const IconSettings = ({ className = 'w-5 h-5' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.08a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.08a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.08a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+  </svg>
+);
+const IconClose = ({ className = 'w-5 h-5' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+);
+const IconInstagram = ({ className = 'w-5 h-5' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+  </svg>
+);
+const IconChevron = ({ className = 'w-4 h-4' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+);
+const IconArrow = ({ className = 'w-4 h-4' }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+);
+const IconHeart = ({ className = 'w-6 h-6' }) => (
+  <svg viewBox="0 0 48 48" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden="true"><path d="M24 40C10 30 8 18 16 13c5-3 8 1 8 3 0-2 3-6 8-3 8 5 6 17-8 27Z"/></svg>
+);
+const IconLeaf = ({ className = 'w-6 h-6' }) => (
+  <svg viewBox="0 0 48 48" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M12 36C12 20 24 10 38 10c0 16-12 26-26 26Z"/><path d="M12 36c6-8 14-16 22-22"/></svg>
+);
+
+/* ================= line-art placeholders ================= */
+function Branch() {
+  return (
+    <g stroke="#A68A5B" fill="none" strokeWidth="1.6" strokeLinecap="round" opacity="0.7">
+      <path d="M0 40 C 30 16, 70 8, 108 18"/>
+      <path d="M26 30q10-20 32-18q-8 20-32 18Z" fill="#DCCBB4" stroke="none"/>
+      <path d="M58 22q10-18 32-14q-8 18-32 14Z" fill="#DCCBB4" stroke="none"/>
+      <path d="M92 18q10-14 30-10q-8 15-30 10Z" fill="#DCCBB4" stroke="none"/>
+    </g>
+  );
+}
+const ART_MOTIFS = {
+  necklace: (<g><path d="M78 66C110 164 190 164 222 66" fill="none" stroke="#A68A5B" strokeWidth="2.5" strokeLinecap="round"/><circle cx="150" cy="150" r="24" fill="none" stroke="#A68A5B" strokeWidth="2.5"/><circle cx="150" cy="194" r="13" fill="#DCCBB4" stroke="#A68A5B" strokeWidth="1.5"/></g>),
+  earrings: (<g><circle cx="108" cy="150" r="34" fill="none" stroke="#A68A5B" strokeWidth="2.5"/><circle cx="192" cy="150" r="34" fill="none" stroke="#A68A5B" strokeWidth="2.5"/><circle cx="108" cy="206" r="8" fill="#DCCBB4" stroke="#A68A5B" strokeWidth="1.5"/><circle cx="192" cy="206" r="8" fill="#DCCBB4" stroke="#A68A5B" strokeWidth="1.5"/></g>),
+  ring: (<g><circle cx="150" cy="216" r="46" fill="none" stroke="#A68A5B" strokeWidth="3"/><path d="M150 128L170 150 150 172 130 150Z" fill="#DCCBB4" stroke="#A68A5B" strokeWidth="2"/></g>),
+  bracelet: (<g><ellipse cx="150" cy="180" rx="62" ry="58" fill="none" stroke="#A68A5B" strokeWidth="3"/><path d="M150 238v18" stroke="#A68A5B" strokeWidth="2" strokeLinecap="round"/><circle cx="150" cy="268" r="10" fill="#DCCBB4" stroke="#A68A5B" strokeWidth="1.5"/></g>),
+  chain: (<g fill="none" stroke="#A68A5B" strokeWidth="4"><ellipse cx="150" cy="108" rx="17" ry="30"/><ellipse cx="150" cy="163" rx="17" ry="30"/><ellipse cx="150" cy="218" rx="17" ry="30"/></g>),
+  anklet: (<g><path d="M62 190C100 168 140 212 178 190S238 168 244 196" fill="none" stroke="#A68A5B" strokeWidth="2.5" strokeLinecap="round"/><circle cx="104" cy="184" r="5" fill="#DCCBB4"/><circle cx="140" cy="200" r="5" fill="#DCCBB4"/><circle cx="178" cy="190" r="5" fill="#DCCBB4"/><circle cx="214" cy="180" r="5" fill="#DCCBB4"/></g>),
+  charm: (<g><circle cx="150" cy="126" r="7" fill="none" stroke="#A68A5B" strokeWidth="2"/><path d="M150 148L186 184 150 220 114 184Z" fill="none" stroke="#A68A5B" strokeWidth="2.5"/><path d="M150 168L166 184 150 200 134 184Z" fill="#DCCBB4"/></g>),
+};
+function ProductArt({ type = 'necklace', tone = '#FBF6EE', alt = '', className = '' }) {
+  return (
+    <svg viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice" className={className} role="img" aria-label={alt}>
+      <rect width="300" height="375" fill={tone}/>
+      <circle cx="150" cy="172" r="104" fill="#DCCBB4" opacity="0.32"/>
+      <g transform="translate(22,64)"><Branch/></g>
+      <g transform="translate(278,320) scale(-1,-1)"><Branch/></g>
+      {ART_MOTIFS[type] || ART_MOTIFS.charm}
+      <path d="M247 58c.6 4.6 3.4 7.4 8 8-4.6.6-7.4 3.4-8 8-.6-4.6-3.4-7.4-8-8 4.6-.6 7.4-3.4 8-8Z" fill="#A68A5B" opacity=".85"/>
+      <path d="M56 296c.5 3.8 2.8 6.2 6.6 6.6-3.8.5-6.2 2.8-6.6 6.6-.5-3.8-2.8-6.2-6.6-6.6 3.8-.5 6.2-2.8 6.6-6.6Z" fill="#A68A5B" opacity=".6"/>
+    </svg>
+  );
+}
+function HeroArt({ className = '' }) {
+  return (
+    <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" className={className} role="img" aria-label="Reviora necklace illustration">
+      <rect width="1600" height="900" fill="#F6EFE5"/>
+      <circle cx="1240" cy="430" r="330" fill="#DCCBB4" opacity="0.35"/>
+      <circle cx="1180" cy="700" r="150" fill="#DCCBB4" opacity="0.25"/>
+      <path d="M1000 60 C 1120 300, 1360 300, 1480 60" fill="none" stroke="#A68A5B" strokeWidth="6" strokeLinecap="round"/>
+      <path d="M1040 40 C 1150 240, 1330 240, 1440 40" fill="none" stroke="#A68A5B" strokeWidth="4" strokeLinecap="round" opacity=".7"/>
+      <circle cx="1240" cy="285" r="16" fill="none" stroke="#A68A5B" strokeWidth="4"/>
+      <path d="M1240 315 C 1226 342, 1254 342, 1240 372 C 1226 342, 1254 342, 1240 315 Z" fill="#DCCBB4" stroke="#A68A5B" strokeWidth="3"/>
+      <g transform="translate(880,120)"><Branch/></g>
+      <g transform="translate(1560,860) scale(-1,-1)"><Branch/></g>
+      <path d="M960 520c.8 6 4.4 9.6 10.4 10.4-6 .8-9.6 4.4-10.4 10.4-.8-6-4.4-9.6-10.4-10.4 6-.8 9.6-4.4 10.4-10.4Z" fill="#A68A5B" opacity=".85" className="twinkle"/>
+      <path d="M1420 620c.8 6 4.4 9.6 10.4 10.4-6 .8-9.6 4.4-10.4 10.4-.8-6-4.4-9.6-10.4-10.4 6-.8 9.6-4.4 10.4-10.4Z" fill="#A68A5B" opacity=".6" className="twinkle"/>
+      <path d="M1500 180c.6 4.6 3.4 7.4 8 8-4.6.6-7.4 3.4-8 8-.6-4.6-3.4-7.4-8-8 4.6-.6 7.4-3.4 8-8Z" fill="#A68A5B" opacity=".7" className="twinkle"/>
+    </svg>
+  );
+}
+const artForCategory = { 'Necklaces':'necklace', 'Earrings':'earrings', 'Bracelets':'bracelet', 'Rings':'ring', 'Chains':'chain', 'Other Accessories':'anklet' };
+function ProductImage({ product, tone, className = '', zoom = true }) {
+  const [failed, setFailed] = useState(false);
+  if (product.image && !failed) {
+    return <img src={product.image} alt={product.name} loading="lazy" onError={() => setFailed(true)}
+      className={cx('w-full h-full object-cover', zoom && 'zoom-img scale-[1.1]', className)} />;
+  }
+  return <ProductArt type={product.art || artForCategory[product.category] || 'charm'} tone={tone} alt={product.name} className={cx('w-full h-full', className)} />;
+}
+const CATEGORY_ICONS = {
+  'Necklaces': <g fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M14 8c3 11 17 11 20 0"/><circle cx="24" cy="25" r="5"/></g>,
+  'Earrings': <g fill="none" stroke="currentColor" strokeWidth="2.2"><circle cx="16" cy="20" r="7"/><circle cx="32" cy="20" r="7"/><circle cx="16" cy="33" r="2.4" fill="currentColor" stroke="none"/><circle cx="32" cy="33" r="2.4" fill="currentColor" stroke="none"/></g>,
+  'Bracelets': <g fill="none" stroke="currentColor" strokeWidth="2.2"><ellipse cx="24" cy="22" rx="12" ry="11"/><circle cx="24" cy="37" r="2.4" fill="currentColor" stroke="none"/></g>,
+  'Rings': <g fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"><circle cx="24" cy="29" r="9"/><path d="M24 10l5 5-5 5-5-5Z"/></g>,
+  'Chains': <g fill="none" stroke="currentColor" strokeWidth="2.4"><ellipse cx="24" cy="10" rx="6" ry="8"/><ellipse cx="24" cy="24" rx="6" ry="8"/><ellipse cx="24" cy="38" rx="6" ry="8"/></g>,
+  'Other Accessories': <path fill="currentColor" d="M24 6c1 7.5 5.5 12 13 13-7.5 1-12 5.5-13 13-1-7.5-5.5-12-13-13 7.5-1 12-5.5 13-13Z"/>,
+};
+function CategoryIcon({ category, className = 'w-6 h-6' }) {
+  return <svg viewBox="0 0 48 48" className={className} aria-hidden="true">{CATEGORY_ICONS[category] || CATEGORY_ICONS['Other Accessories']}</svg>;
+}
+
+/* ================= Scroll-scrub hero animation (30 frames) ================= */
+const HERO_FRAME_PATHS = Array.from({ length: 30 }, (_, i) =>
+  `./assets/frames/ezgif-frame-${String(i + 1).padStart(3, '0')}.jpg`);
+
+function HeroScrub() {
+  const [frames, setFrames] = useState(null);
+  const [idx, setIdx] = useState(0);
+  const wrapRef = useRef(null);
+
+  useEffect(() => {
+    let alive = true;
+    Promise.all(HERO_FRAME_PATHS.map(src => new Promise(resolve => {
+      const img = new Image();
+      img.onload = () => resolve(src);
+      img.onerror = () => resolve(null);
+      img.src = src;
+    }))).then(list => {
+      if (alive) setFrames(list.filter(Boolean));
+    });
+    return () => { alive = false; };
+  }, []);
+
+  useEffect(() => {
+    if (!frames || frames.length === 0) return;
+    const onScroll = () => {
+      const el = wrapRef.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (-r.top) / (r.height * 0.9)));
+      setIdx(Math.min(frames.length - 1, Math.floor(p * frames.length)));
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [frames]);
+
+  if (!frames || frames.length === 0) return null;
+  return (
+    <div className="hero-scrub-wrap" ref={wrapRef} aria-hidden="true">
+      {frames.map((src, i) => (
+        <img key={src} src={src} alt="" decoding="async"
+          className="hero-scrub-img" style={{ opacity: i === idx ? 1 : 0 }} />
+      ))}
+    </div>
+  );
+}
+
+/* ================= ui ================= */
+function Btn({ to, href, onClick, variant = 'primary', size = 'md', className, children, disabled, type = 'button', ariaLabel }) {
+  const base = 'inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-[0.18em] uppercase transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.97]';
+  const sizes = { sm: 'text-[10px] px-5 py-2.5', md: 'text-[11px] px-7 py-3.5', lg: 'text-xs px-9 py-4' };
+  const variants = {
+    primary: 'bg-cocoa text-ivory hover:bg-gold hover:shadow-lg hover:shadow-gold/20',
+    gold: 'bg-gold text-ivory hover:bg-cocoa hover:shadow-lg hover:shadow-cocoa/20',
+    outline: 'border border-cocoa/30 text-cocoa hover:border-gold hover:text-gold bg-white/60',
+    ghost: 'text-cocoa hover:text-gold underline-offset-4 hover:underline',
+  };
+  const cls = cx(base, sizes[size], variants[variant], className);
+  if (to) return <Link to={to} className={cls} ariaLabel={ariaLabel} onClick={onClick}>{children}</Link>;
+  if (href) return <a href={href} target="_blank" rel="noopener noreferrer" className={cls} aria-label={ariaLabel} onClick={onClick}>{children}</a>;
+  return <button type={type} className={cls} onClick={onClick} disabled={disabled} aria-label={ariaLabel}>{children}</button>;
+}
+function Badge({ children, tone = 'gold' }) {
+  const tones = { gold: 'bg-gold/90 text-ivory', cocoa: 'bg-cocoa/90 text-ivory', beige: 'bg-beige text-cocoa' };
+  return <span className={cx('px-2.5 py-1 rounded-full text-[9px] font-bold tracking-[0.2em] uppercase', tones[tone])}>{children}</span>;
+}
+function SparkleDivider({ className = '' }) {
+  return (
+    <div className={cx('flex items-center justify-center gap-3 text-gold', className)} aria-hidden="true">
+      <span className="h-px w-12 bg-gold/50"/><IconSparkle className="w-3 h-3 twinkle"/><span className="h-px w-12 bg-gold/50"/>
+    </div>
+  );
+}
+function SectionHeading({ eyebrow, title, linkTo, linkLabel, align = 'center' }) {
+  const center = align === 'center';
+  return (
+    <div className={cx('mb-10 md:mb-14', center ? 'text-center' : 'flex flex-wrap items-end justify-between gap-4')}>
+      <div className={center ? '' : 'max-w-xl'}>
+        {eyebrow && (
+          <p className={cx('flex items-center gap-2 text-[10px] font-semibold tracking-[0.35em] uppercase text-gold', center && 'justify-center')}>
+            <IconSparkle className="w-2.5 h-2.5"/>{eyebrow}
+          </p>
+        )}
+        <h2 className="serif text-3xl md:text-[2.6rem] leading-tight mt-3">{title}</h2>
+        {center && <SparkleDivider className="mt-5"/>}
+      </div>
+      {linkTo && !center && <Btn to={linkTo} variant="outline" size="sm">{linkLabel} <IconArrow className="w-3.5 h-3.5"/></Btn>}
+    </div>
+  );
+}
+function PageHero({ eyebrow, title, subtitle }) {
+  return (
+    <section className="relative overflow-hidden pt-12 pb-10 md:pt-16 md:pb-14 text-center px-4">
+      <div className="absolute -top-24 -left-20 w-80 h-80 rounded-full bg-beige/40 blur-3xl floaty" aria-hidden="true"></div>
+      <div className="absolute -bottom-24 -right-16 w-72 h-72 rounded-full bg-gold/15 blur-3xl floaty-slow" aria-hidden="true"></div>
+      <div className="relative max-w-3xl mx-auto fade-up">
+        {eyebrow && <p className="text-[10px] font-semibold tracking-[0.35em] uppercase text-gold flex items-center justify-center gap-2"><IconSparkle className="w-2.5 h-2.5 twinkle"/>{eyebrow}</p>}
+        <h1 className="serif text-4xl md:text-6xl mt-4">{title}</h1>
+        <SparkleDivider className="mt-6"/>
+        {subtitle && <p className="mt-5 text-cocoa/75 leading-relaxed max-w-2xl mx-auto">{subtitle}</p>}
+      </div>
+    </section>
+  );
+}
+
+/* ================= logo ================= */
+function Monogram({ className = 'w-10 h-10' }) {
+  return (
+    <svg viewBox="0 0 64 64" className={className} aria-hidden="true">
+      <circle cx="32" cy="32" r="29" fill="#FFFDF9" stroke="#A68A5B" strokeWidth="1.6"/>
+      <text x="32" y="43" textAnchor="middle" fontFamily="'Cormorant Garamond',serif" fontSize="32" fontWeight="600" fill="#4A3B2A">R</text>
+    </svg>
+  );
+}
+function BrandMark({ className = 'w-10 h-10' }) {
+  const [failed, setFailed] = useState(false);
+  if (!LOGO_URL || failed) return <Monogram className={className}/>;
+  return <img src={LOGO_URL} alt="Reviora Ornaments logo" onError={() => setFailed(true)}
+    className={cx('rounded-full object-cover border border-gold/30 bg-white', className)}/>;
+}
+function Logo({ onClick }) {
+  return (
+    <Link to="/" onClick={onClick} className="flex items-center gap-2.5 group" ariaLabel="Reviora Ornaments — Home">
+      <BrandMark className="w-10 h-10 md:w-11 md:h-11 transition-transform duration-300 group-hover:rotate-3"/>
+      <span className="hidden sm:block leading-none">
+        <span className="serif block text-lg md:text-xl tracking-[0.22em] font-semibold">REVÍORA</span>
+        <span className="block text-[8px] tracking-[0.5em] text-gold font-semibold mt-1">ORNAMENTS</span>
+      </span>
+    </Link>
+  );
+}
+
+/* ================= buy now button ================= */
+function BuyNowButton({ product, qty = 1, label = 'Buy Now', variant = 'primary', size = 'md', className }) {
+  const { openBuyNow } = useBuyNow();
+  const soldOut = !isProductAvailable(product);
+  return (
+    <Btn variant={variant} size={size} className={cx(className)} disabled={soldOut}
+      ariaLabel={soldOut ? `${product.name} is sold out` : `Buy ${product.name} via Instagram DM`}
+      onClick={() => !soldOut && openBuyNow(product, qty)}>
+      {soldOut ? 'Sold Out' : label}
+    </Btn>
+  );
+}
+
+/* ================= cards ================= */
+function ProductCard({ product }) {
+  const soldOut = !isProductAvailable(product);
+  const { openBuyNow } = useBuyNow();
+  return (
+    <article className="group fade-up transition-transform duration-300 hover:-translate-y-1.5">
+      <Link to={`/product/${product.slug}`} className="block relative overflow-hidden rounded-2xl bg-ivory border border-beige/60 hover:border-gold/50 hover:shadow-lg hover:shadow-gold/10 transition-all duration-300" ariaLabel={`View ${product.name}`}>
+        <div className="aspect-[4/5] overflow-hidden zoom-hover">
+          <div className={cx('w-full h-full', soldOut && 'opacity-60 saturate-50')}>
+            <ProductImage product={product}/>
+          </div>
+        </div>
+        <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+          {product.newArrival && !soldOut && <Badge tone="gold">New</Badge>}
+          {product.bestseller && !soldOut && <Badge tone="cocoa">Bestseller</Badge>}
+        </div>
+        {soldOut && (
+          <div className="absolute inset-0 flex items-center justify-center bg-ivory/50">
+            <span className="bg-cocoa/90 text-ivory text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full">Sold Out</span>
+          </div>
+        )}
+        <span className="hidden md:flex absolute inset-x-4 bottom-4 items-center justify-center rounded-full bg-ivory/95 text-[10px] font-semibold tracking-[0.22em] uppercase py-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none">
+          View Product
+        </span>
+      </Link>
+      <div className="pt-3.5 text-center px-2">
+        <p className="text-[9px] font-semibold tracking-[0.25em] uppercase text-gold">{product.category}</p>
+        <h3 className="serif text-lg leading-snug mt-1">
+          <Link to={`/product/${product.slug}`} className="hover:text-gold transition-colors">{product.name}</Link>
+        </h3>
+        <p className="text-sm mt-1 text-cocoa/90">{formatPrice(product.price)}</p>
+        {!soldOut && (
+          <button onClick={() => openBuyNow(product, 1)}
+            className="mt-2.5 text-[10px] font-semibold tracking-[0.22em] uppercase border-b border-gold/60 pb-0.5 hover:text-gold transition-colors">
+            Buy Now
+          </button>
+        )}
+      </div>
+    </article>
+  );
+}
+function SkeletonCard() {
+  return (
+    <div className="fade-up" aria-hidden="true">
+      <div className="aspect-[4/5] rounded-2xl skeleton"/>
+      <div className="pt-4 flex flex-col items-center gap-2">
+        <div className="h-2 w-14 rounded skeleton"/>
+        <div className="h-3.5 w-28 rounded skeleton"/>
+        <div className="h-2.5 w-12 rounded skeleton"/>
+      </div>
+    </div>
+  );
+}
+function ProductRow({ products, loading }) {
+  if (loading) return <div className="flex gap-4 overflow-hidden">{Array.from({length:4}).map((_,i)=><div key={i} className="shrink-0 w-2/3 sm:w-1/2 md:w-1/4"><SkeletonCard/></div>)}</div>;
+  return (
+    <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-2 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-4 md:overflow-visible">
+      {products.map(p => <div key={p.id} className="snap-start shrink-0 w-[68%] sm:w-[45%] md:w-auto"><ProductCard product={p}/></div>)}
+    </div>
+  );
+}
+function EmptyState({ title = 'No pieces found.', subtitle = 'Try another category or clear your filters.', action }) {
+  return (
+    <div className="text-center py-16 md:py-24 fade-up">
+      <IconSparkle className="w-6 h-6 text-gold mx-auto"/>
+      <h3 className="serif text-2xl md:text-3xl mt-4">{title}</h3>
+      <p className="text-sm text-cocoa/65 mt-2">{subtitle}</p>
+      {action && <div className="mt-6 flex justify-center gap-3">{action}</div>}
+    </div>
+  );
+}
+function ErrorState({ onRetry }) {
+  return (
+    <div className="text-center py-16">
+      <h3 className="serif text-2xl">Something went wrong.</h3>
+      <p className="text-sm text-cocoa/65 mt-2">We couldn't load the collection. Please try again.</p>
+      {onRetry && <div className="mt-6"><Btn variant="outline" onClick={onRetry}>Try Again</Btn></div>}
+    </div>
+  );
+}
+
+/* ================= header ================= */
+function Header({ searchOpen, setSearchOpen, menuOpen, setMenuOpen }) {
+  const [scrolled, setScrolled] = useState(false);
+  const { count: cartCount, setOpen: setCartOpen } = useCart();
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  const navLink = 'text-[11px] font-semibold tracking-[0.2em] uppercase hover:text-gold transition-colors py-2 relative after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:bg-gold hover:after:w-full after:transition-all after:duration-300';
+  return (
+    <>
+      <div className="bg-cocoa text-center text-[10px] tracking-[0.22em] uppercase py-2 px-4">
+        <span className="shimmer-text">✦ Orders via Instagram DM — tap Buy Now, we take you straight there ✦</span>
+      </div>
+      <header className={cx('sticky top-0 z-50 bg-white/90 backdrop-blur-md transition-all duration-300', scrolled ? 'border-b border-beige/70 shadow-[0_2px_16px_-8px_rgba(74,59,42,0.18)]' : 'border-b border-beige/40')}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-[74px] flex items-center justify-between gap-4">
+          <div className="flex items-center"><Logo/></div>
+          <nav className="hidden lg:flex items-center gap-7" aria-label="Primary">
+            <Link to="/" className={navLink}>Home</Link>
+            <Link to="/shop" className={navLink}>Shop</Link>
+            <Link to="/category/necklaces" className={navLink}>Necklaces</Link>
+            <Link to="/category/earrings" className={navLink}>Earrings</Link>
+            <Link to="/about" className={navLink}>About</Link>
+            <Link to="/faq" className={navLink}>FAQ</Link>
+          </nav>
+          <div className="flex items-center gap-1">
+            <button className="p-2.5 rounded-full hover:bg-cream text-cocoa hover:text-gold transition-colors" aria-label="Search products" onClick={() => setSearchOpen(true)}><IconSearch/></button>
+            <button className="relative p-2.5 rounded-full hover:bg-cream text-cocoa hover:text-gold transition-colors"
+              aria-label={cartCount > 0 ? `Open cart, ${cartCount} items` : 'Open cart'}
+              onClick={() => setCartOpen(true)}>
+              <IconCart/>
+              {cartCount > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 min-w-[17px] h-[17px] px-1 rounded-full bg-gold text-ivory text-[9px] font-bold flex items-center justify-center">{cartCount}</span>
+              )}
+            </button>
+            <button className="p-2.5 rounded-full hover:bg-cream text-cocoa hover:text-gold transition-all duration-500 hover:rotate-90" aria-label="Open menu and settings" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}><IconSettings/></button>
+          </div>
+        </div>
+      </header>
+    </>
+  );
+}
+function MenuDrawer({ open, onClose }) {
+  useEffect(() => {
+    if (!open) return;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => { document.body.style.overflow = ''; window.removeEventListener('keydown', onKey); };
+  }, [open, onClose]);
+  if (!open) return null;
+  const group = 'text-[9px] font-bold tracking-[0.35em] uppercase text-gold px-4 mt-6 mb-2';
+  const item = 'block px-4 py-2.5 rounded-xl serif text-2xl hover:bg-cream hover:pl-6 transition-all duration-300';
+  const small = 'block px-4 py-1.5 text-xs tracking-[0.15em] uppercase text-cocoa/70 hover:text-gold';
+  return (
+    <div className="fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Menu">
+      <div className="absolute inset-0 bg-cocoa/40 backdrop-blur-sm" onClick={onClose}></div>
+      <div className="absolute right-0 top-0 h-full w-[86%] max-w-sm bg-ivory shadow-2xl overflow-y-auto fade-up">
+        <div className="flex items-center justify-between p-4 border-b border-beige/60">
+          <Logo onClick={onClose}/>
+          <button onClick={onClose} aria-label="Close menu" className="p-2 rounded-full hover:bg-cream"><IconClose/></button>
+        </div>
+        <nav className="p-3 pb-10">
+          <p className={group}>Shop</p>
+          <Link to="/" className={item} onClick={onClose}>Home</Link>
+          <Link to="/shop" className={item} onClick={onClose}>Shop All</Link>
+          <Link to="/category/women" className={item} onClick={onClose}>The Collection</Link>
+          <p className={group}>Categories</p>
+          {PRODUCT_CATEGORIES.map(c => <Link key={c.slug} to={`/category/${c.slug}`} className={item} onClick={onClose}>{c.name}</Link>)}
+          <p className={group}>Help</p>
+          <Link to="/about" className={small} onClick={onClose}>About Reviora</Link>
+          <Link to="/faq" className={small} onClick={onClose}>FAQ</Link>
+          <Link to="/shipping" className={small} onClick={onClose}>Shipping & Delivery</Link>
+          <Link to="/returns" className={small} onClick={onClose}>Returns & Exchange</Link>
+          <Link to="/care" className={small} onClick={onClose}>Jewellery Care</Link>
+          <Link to="/contact" className={small} onClick={onClose}>Contact</Link>
+          <Link to="/terms" className={small} onClick={onClose}>Terms & Conditions</Link>
+          <div className="mt-8 px-4">
+            <Btn href={InstagramService.dmUrl()} variant="gold" onClick={() => Analytics.track('instagram_click', { context: 'menu_drawer' })}>
+              <IconInstagram className="w-4 h-4"/>DM us — @{INSTAGRAM_USERNAME}
+            </Btn>
+          </div>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+/* ================= search ================= */
+function SearchOverlay({ open, onClose }) {
+  const { products, loading } = useCatalog();
+  const [q, setQ] = useState('');
+  const inputRef = useRef(null);
+  useEffect(() => {
+    if (open) { document.body.style.overflow = 'hidden'; setTimeout(() => inputRef.current?.focus(), 60); }
+    else { document.body.style.overflow = ''; setQ(''); }
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  const results = useMemo(() => {
+    if (!q.trim() || loading) return [];
+    return products.filter(p => matchesQuery(p, q)).slice(0, 8);
+  }, [q, products, loading]);
+  const total = useMemo(() => products.filter(p => matchesQuery(p, q)).length, [q, products]);
+  if (!open) return null;
+  const viewAll = () => { Analytics.track('search', { query: q }); navigate('/shop?q=' + encodeURIComponent(q.trim())); onClose(); };
+  return (
+    <div className="fixed inset-0 z-[60] bg-cream/95 backdrop-blur-md overflow-y-auto" role="dialog" aria-modal="true" aria-label="Search products">
+      <div className="max-w-2xl mx-auto px-4 pt-6 md:pt-16 pb-16">
+        <div className="flex items-center gap-3">
+          <div className="flex-1 flex items-center gap-3 bg-white border border-beige rounded-full px-5 py-3.5 focus-within:border-gold focus-within:shadow-lg focus-within:shadow-gold/10 transition-all">
+            <IconSearch className="w-4 h-4 text-gold shrink-0"/>
+            <input ref={inputRef} value={q} onChange={e => setQ(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter' && q.trim()) viewAll(); }}
+              placeholder="Search pieces, SKUs, categories…"
+              className="flex-1 bg-transparent outline-none text-sm placeholder:text-cocoa/40" aria-label="Search products"/>
+          </div>
+          <button onClick={onClose} aria-label="Close search" className="p-3 rounded-full bg-white border border-beige hover:border-gold transition-colors"><IconClose/></button>
+        </div>
+        {q.trim() && (
+          <div className="mt-6">
+            {results.length === 0 ? (
+              <EmptyState title="No pieces found." subtitle={`Nothing matches “${q.trim()}”.`}/>
+            ) : (
+              <>
+                <ul className="divide-y divide-beige/50">
+                  {results.map(p => (
+                    <li key={p.id}>
+                      <Link to={`/product/${p.slug}`} onClick={onClose} className="flex items-center gap-4 py-3.5 group">
+                        <span className="block w-12 h-14 rounded-lg overflow-hidden border border-beige/70 shrink-0 bg-white"><ProductImage product={p}/></span>
+                        <span className="flex-1 min-w-0">
+                          <span className="serif text-lg block truncate group-hover:text-gold transition-colors">{p.name}</span>
+                          <span className="text-[10px] tracking-[0.2em] uppercase text-cocoa/50">{p.sku} · {p.category}</span>
+                        </span>
+                        <span className="text-sm shrink-0">{formatPrice(p.price)}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                {total > results.length && (
+                  <div className="mt-5 text-center"><Btn variant="outline" size="sm" onClick={viewAll}>View all {total} results</Btn></div>
+                )}
+              </>
+            )}
+          </div>
+        )}
+        {!q.trim() && <p className="mt-10 text-center text-xs tracking-[0.2em] uppercase text-cocoa/45">Search by name · SKU · category</p>}
+      </div>
+    </div>
+  );
+}
+
+/* ================= footer ================= */
+function FloatingInstagram() {
+  return (
+    <a href={InstagramService.dmUrl()} target="_blank" rel="noopener noreferrer"
+      aria-label={`DM Reviora on Instagram — @${INSTAGRAM_USERNAME}`}
+      onClick={() => Analytics.track('instagram_click', { context: 'floating' })}
+      className="fixed bottom-5 right-5 z-40 w-12 h-12 flex items-center justify-center rounded-full bg-cocoa text-ivory shadow-lg hover:bg-gold hover:scale-110 transition-all duration-300">
+      <IconInstagram className="w-6 h-6"/>
+    </a>
+  );
+}
+function Footer() {
+  const col = 'space-y-2.5';
+  const link = 'block text-xs tracking-[0.12em] uppercase text-cocoa/65 hover:text-gold hover:translate-x-1 transition-all duration-300';
+  return (
+    <footer className="bg-ivory border-t border-beige/70 mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16 grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div>
+          <div className="flex items-center gap-3">
+            <BrandMark className="w-14 h-14"/>
+            <span className="leading-none">
+              <span className="serif block text-xl tracking-[0.22em] font-semibold">REVÍORA</span>
+              <span className="block text-[8px] tracking-[0.5em] text-gold font-semibold mt-1">ORNAMENTS</span>
+            </span>
+          </div>
+          <p className="serif italic text-lg text-cocoa/75 mt-4">Small details. Big style.</p>
+          <a href={INSTAGRAM_PROFILE_URL} target="_blank" rel="noopener noreferrer"
+            onClick={() => Analytics.track('instagram_click', { context: 'footer' })}
+            className="inline-flex items-center gap-2 mt-4 text-xs tracking-[0.2em] uppercase text-gold hover:text-cocoa transition-colors">
+            <IconInstagram className="w-4 h-4"/>@{INSTAGRAM_USERNAME}
+          </a>
+        </div>
+        <nav aria-label="Shop">
+          <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cocoa mb-4">Shop</p>
+          <div className={col}>
+            <Link to="/shop" className={link}>Shop All</Link>
+            <Link to="/category/women" className={link}>The Collection</Link>
+            {PRODUCT_CATEGORIES.slice(0,4).map(c => <Link key={c.slug} to={`/category/${c.slug}`} className={link}>{c.name}</Link>)}
+          </div>
+        </nav>
+        <nav aria-label="Company">
+          <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cocoa mb-4">Company</p>
+          <div className={col}>
+            <Link to="/about" className={link}>About</Link>
+            <Link to="/faq" className={link}>FAQ</Link>
+            <Link to="/contact" className={link}>Contact</Link>
+            <Link to="/category/chains" className={link}>Chains</Link>
+            <Link to="/category/other-accessories" className={link}>Other Accessories</Link>
+          </div>
+        </nav>
+        <nav aria-label="Support">
+          <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-cocoa mb-4">Support</p>
+          <div className={col}>
+            <Link to="/shipping" className={link}>Shipping & Delivery</Link>
+            <Link to="/returns" className={link}>Returns & Exchange</Link>
+            <Link to="/care" className={link}>Jewellery Care</Link>
+            <Link to="/terms" className={link}>Terms & Conditions</Link>
+            <span className="text-[11px] text-cocoa/50 pt-2">Need help? DM us on Instagram.</span>
+          </div>
+        </nav>
+      </div>
+      <div className="border-t border-beige/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] tracking-[0.18em] uppercase text-cocoa/50">
+          <p>© 2026 Reviora Ornaments</p>
+          <p className="flex items-center gap-1.5">Made with <IconSparkle className="w-2.5 h-2.5 text-gold twinkle"/> for your everyday moments</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/* ================= instagram cta + accordion ================= */
+function InstagramCTA() {
+  return (
+    <section className="py-16 md:py-24 text-center px-4">
+      <div className="max-w-2xl mx-auto fade-up">
+        <p className="text-[10px] font-semibold tracking-[0.35em] uppercase text-gold flex items-center justify-center gap-2">
+          <IconInstagram className="w-4 h-4"/>Instagram
+        </p>
+        <h2 className="serif text-3xl md:text-5xl mt-3">Follow the Reviora edit.</h2>
+        <p className="mt-4 text-cocoa/70">New pieces, styling edits and restocks — first on Instagram.</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
+          {['necklace','earrings','ring','anklet'].map((art, i) => (
+            <a key={art} href={INSTAGRAM_PROFILE_URL} target="_blank" rel="noopener noreferrer" aria-label={`Reviora Instagram post ${i+1}`}
+              onClick={() => Analytics.track('instagram_click', { context: 'ig_grid' })}
+              className="relative rounded-2xl overflow-hidden border border-beige/70 aspect-[4/5] group bg-ivory transition-transform duration-300 hover:-translate-y-1">
+              <ProductArt type={art} alt="Reviora jewellery preview" className="w-full h-full transition-transform duration-500 group-hover:scale-105"/>
+              <span className="absolute inset-0 flex items-center justify-center bg-cocoa/0 group-hover:bg-cocoa/35 transition-colors">
+                <IconInstagram className="w-7 h-7 text-ivory opacity-0 group-hover:opacity-100 transition-opacity"/>
+              </span>
+            </a>
+          ))}
+        </div>
+        <div className="mt-8">
+          <Btn href={INSTAGRAM_PROFILE_URL} variant="gold" onClick={() => Analytics.track('instagram_click', { context: 'ig_section' })}>
+            <IconInstagram className="w-4 h-4"/>Follow us on Instagram
+          </Btn>
+          <p className="mt-3 text-[10px] tracking-[0.25em] uppercase text-cocoa/50">@{INSTAGRAM_USERNAME}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+function Accordion({ items, defaultOpen = 0 }) {
+  const [openIdx, setOpenIdx] = useState(defaultOpen);
+  return (
+    <div className="divide-y divide-beige/60 border-y border-beige/60">
+      {items.map((item, i) => {
+        const open = openIdx === i;
+        return (
+          <div key={i}>
+            <button className="w-full flex items-center justify-between gap-4 py-5 text-left group" aria-expanded={open}
+              onClick={() => setOpenIdx(open ? -1 : i)}>
+              <span className={cx('font-medium transition-colors', open ? 'text-gold' : 'text-cocoa group-hover:text-gold')}>{item.q}</span>
+              <IconChevron className={cx('w-4 h-4 shrink-0 text-gold transition-transform duration-300', open && 'rotate-180')}/>
+            </button>
+            <div className={cx('grid transition-all duration-500 ease-in-out', open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0')}>
+              <div className="overflow-hidden"><p className="pb-5 pr-6 text-sm leading-7 text-cocoa/75">{item.a}</p></div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/* ================= home ================= */
+function TrustStrip() {
+  const items = [
+    { icon: <IconSparkle className="w-5 h-5"/>, label: 'Premium Quality' },
+    { icon: <IconHeart className="w-5 h-5"/>, label: 'Timeless Designs' },
+    { icon: <IconLeaf className="w-5 h-5"/>, label: 'For Every You' },
+  ];
+  return (
+    <section className="border-y border-beige/60 bg-ivory/60">
+      <div className="max-w-5xl mx-auto px-4 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
+        {items.map((it, i) => (
+          <React.Fragment key={it.label}>
+            {i > 0 && <IconSparkle className="w-2 h-2 text-gold/70 hidden sm:block"/>}
+            <span className="flex items-center gap-2.5 text-gold">
+              {it.icon}<span className="text-[10px] font-bold tracking-[0.3em] uppercase text-cocoa/80">{it.label}</span>
+            </span>
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
+}
+function CollectionCard({ category }) {
+  return (
+    <Link to={`/category/${category.slug}`} className="group relative overflow-hidden rounded-3xl border border-beige/70 bg-ivory transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:shadow-gold/10 hover:-translate-y-1">
+      <div className="aspect-[4/5] overflow-hidden zoom-hover">
+        <div className="w-full h-full"><ProductArt type={artForCategory[category.name]} alt={`${category.name} collection`}/></div>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-ivory via-ivory/85 to-transparent pt-16">
+        <p className="text-[9px] font-bold tracking-[0.3em] uppercase text-gold">Collection</p>
+        <div className="flex items-center justify-between mt-1">
+          <h3 className="serif text-2xl md:text-3xl">{category.name}</h3>
+          <span className="w-10 h-10 rounded-full border border-gold/50 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-ivory group-hover:rotate-45 transition-all duration-300">
+            <IconArrow className="w-4 h-4"/>
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+function CollectionBanner({ to, title, desc, art }) {
+  return (
+    <Link to={to} className="group flex items-center gap-6 rounded-3xl border border-beige/70 bg-ivory p-6 md:p-8 hover:border-gold/60 hover:shadow-xl hover:shadow-gold/10 hover:-translate-y-1 transition-all duration-300">
+      <div className="w-28 h-32 md:w-40 md:h-44 shrink-0 rounded-2xl overflow-hidden border border-beige/60">
+        <div className="w-full h-full transition-transform duration-500 group-hover:scale-110"><ProductArt type={art} alt={title}/></div>
+      </div>
+      <div>
+        <p className="text-[9px] font-bold tracking-[0.3em] uppercase text-gold">Edit</p>
+        <h3 className="serif text-2xl md:text-3xl mt-1">{title}</h3>
+        <p className="text-sm text-cocoa/70 mt-2 leading-relaxed max-w-xs">{desc}</p>
+        <span className="inline-flex items-center gap-2 mt-4 text-[10px] font-bold tracking-[0.25em] uppercase text-gold group-hover:gap-3.5 transition-all">
+          Explore <IconArrow className="w-3.5 h-3.5"/>
+        </span>
+      </div>
+    </Link>
+  );
+}
+function HeroVisual() {
+  return <HeroArt className="absolute inset-0 w-full h-full"/>;
+}
+function Home() {
+  useSEO({ title: '', description: DEFAULT_DESCRIPTION });
+  const { products, loading } = useCatalog();
+  const newIn = products.filter(p => p.newArrival).slice(0, 4);
+  const best = products.filter(p => p.bestseller).slice(0, 4);
+  const featuredCats = [CATEGORIES[1], CATEGORIES[2], CATEGORIES[3]];
+  useEffect(() => { Analytics.track('page_view', { page: 'home' }); }, []);
+  return (
+    <main>
+      {/* HERO — 30-frame scroll animation behind all text */}
+      <section className="relative overflow-hidden bg-cream">
+        <div className="relative h-[86vh] min-h-[560px] md:h-[92vh]">
+          <HeroVisual/>
+          <HeroScrub/>
+          <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/55 to-transparent md:via-cream/35" aria-hidden="true"></div>
+          <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-cream to-transparent" aria-hidden="true"></div>
+          <div className="hero-content-z relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div className="max-w-xl text-center md:text-left mx-auto md:mx-0 fade-up">
+              <p className="inline-flex items-center gap-2 text-[10px] font-semibold tracking-[0.35em] uppercase text-gold">
+                <IconSparkle className="w-2.5 h-2.5 twinkle"/>Minimal Jewellery for Women
+              </p>
+              <h1 className="serif text-6xl sm:text-7xl lg:text-8xl leading-[0.95] mt-5 tracking-[0.08em]">REVÍORA</h1>
+              <p className="text-[11px] md:text-xs tracking-[0.7em] uppercase text-gold font-semibold mt-3 md:pl-1">O R N A M E N T S</p>
+              <p className="serif italic text-2xl md:text-3xl mt-6 text-cocoa/90">Small details. Big style.</p>
+              <p className="mt-4 text-cocoa/75 leading-relaxed max-w-md mx-auto md:mx-0">
+                Discover minimal jewellery and everyday pieces made to complete your look.
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                <Btn to="/shop" size="lg">Shop the Collection</Btn>
+                <Btn href={InstagramService.dmUrl()} variant="outline" size="lg" onClick={() => Analytics.track('instagram_click', { context: 'hero' })}>
+                  <IconInstagram className="w-4 h-4"/>DM to Order
+                </Btn>
+              </div>
+              <p className="mt-6 text-[10px] tracking-[0.25em] uppercase text-cocoa/55">@{INSTAGRAM_USERNAME} · Order via Instagram DM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <TrustStrip/>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="pt-16 md:pt-24">
+          <Reveal><SectionHeading eyebrow="Curated for you" title="Featured Collections"/></Reveal>
+          <Reveal delay={100}>
+            <div className="grid sm:grid-cols-3 gap-4 md:gap-6">
+              {featuredCats.map(c => <CollectionCard key={c.slug} category={c}/>)}
+            </div>
+          </Reveal>
+        </section>
+
+        <section className="pt-16 md:pt-24">
+          <Reveal><SectionHeading eyebrow="Just landed" title="New Arrivals" align="left" linkTo="/shop" linkLabel="View all"/></Reveal>
+          <Reveal delay={100}><ProductRow products={newIn} loading={loading}/></Reveal>
+        </section>
+
+        <section className="pt-16 md:pt-24">
+          <Reveal><SectionHeading eyebrow="Loved by many" title="Best Sellers" align="left" linkTo="/shop" linkLabel="View all"/></Reveal>
+          <Reveal delay={100}><ProductRow products={best} loading={loading}/></Reveal>
+        </section>
+
+        <section className="pt-16 md:pt-24">
+          <Reveal><SectionHeading eyebrow="Find your thing" title="Shop by Category"/></Reveal>
+          <Reveal delay={100}>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
+              {PRODUCT_CATEGORIES.map(c => (
+                <Link key={c.slug} to={`/category/${c.slug}`}
+                  className="group flex flex-col items-center gap-3 rounded-2xl border border-beige/60 bg-white p-5 md:p-6 hover:border-gold/60 hover:shadow-lg hover:shadow-gold/10 hover:-translate-y-1 transition-all duration-300">
+                  <span className="w-12 h-12 rounded-full border border-gold/40 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-ivory group-hover:scale-110 transition-all duration-300">
+                    <CategoryIcon category={c.name}/>
+                  </span>
+                  <span className="text-[9px] md:text-[10px] font-semibold tracking-[0.16em] uppercase text-cocoa/80 text-center leading-relaxed">{c.name}</span>
+                </Link>
+              ))}
+            </div>
+          </Reveal>
+        </section>
+
+        <section className="pt-16 md:pt-24 grid md:grid-cols-2 gap-4 md:gap-6">
+          <Reveal><CollectionBanner to="/shop?q=pearl" art="necklace" title="The Pearl Edit" desc="Lustrous, timeless, unmistakably feminine — pearls for every day."/></Reveal>
+          <Reveal delay={120}><CollectionBanner to="/category/necklaces" art="charm" title="The Pendant Edit" desc="Little charms with big meaning — find the one that feels like you."/></Reveal>
+        </section>
+
+        <section className="py-20 md:py-28 text-center">
+          <Reveal>
+            <IconSparkle className="w-5 h-5 text-gold mx-auto twinkle"/>
+            <p className="serif italic text-3xl md:text-[2.75rem] leading-snug max-w-3xl mx-auto mt-6">“Minimal pieces. Maximum personality.”</p>
+            <p className="mt-5 text-cocoa/70 max-w-xl mx-auto leading-relaxed">
+              Reviora is made for your everyday moments — jewellery that whispers, not shouts. More than just jewellery.
+            </p>
+            <SparkleDivider className="mt-8"/>
+          </Reveal>
+        </section>
+      </div>
+
+      <div className="bg-ivory/60 border-y border-beige/50">
+        <div className="max-w-7xl mx-auto"><InstagramCTA/></div>
+      </div>
+
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-16 md:pt-24">
+        <Reveal><SectionHeading eyebrow="Good to know" title="Questions, answered"/></Reveal>
+        <Reveal delay={100}><Accordion items={FAQS.slice(0, 4)}/></Reveal>
+        <div className="text-center mt-8"><Btn to="/faq" variant="outline" size="sm">View all FAQs</Btn></div>
+      </section>
+
+      <section className="relative overflow-hidden mt-20 md:mt-28">
+        <div className="absolute inset-x-0 bottom-0 h-full flex items-center justify-center" aria-hidden="true">
+          <div className="w-[36rem] h-[36rem] rounded-full bg-beige/35 blur-3xl floaty-slow"></div>
+        </div>
+        <div className="relative max-w-3xl mx-auto px-4 py-20 md:py-28 text-center fade-up">
+          <IconSparkle className="w-6 h-6 text-gold mx-auto twinkle"/>
+          <h2 className="serif text-4xl md:text-6xl leading-tight mt-6">
+            Your next favourite piece<br className="hidden sm:block"/> might be here. ✨
+          </h2>
+          <p className="mt-5 text-cocoa/75">DM us to discover more.</p>
+          <p className="mt-2 text-sm tracking-[0.25em] uppercase text-gold">@{INSTAGRAM_USERNAME}</p>
+          <div className="mt-8">
+            <Btn href={InstagramService.dmUrl()} variant="primary" size="lg" onClick={() => Analytics.track('instagram_click', { context: 'final_cta' })}>
+              <IconInstagram className="w-4 h-4"/>DM us on Instagram
+            </Btn>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+/* ================= shop ================= */
+const PRICE_RANGES = [
+  { id: 'all', label: 'All prices', test: () => true },
+  { id: 'under200', label: 'Under ₹200', test: p => p.price < 200 },
+  { id: '200to300', label: '₹200 – ₹299', test: p => p.price >= 200 && p.price < 300 },
+  { id: 'above300', label: '₹300 +', test: p => p.price >= 300 },
+];
+const SORTS = [
+  { id: 'featured', label: 'Featured' },
+  { id: 'newest', label: 'Newest' },
+  { id: 'price-asc', label: 'Price: Low to High' },
+  { id: 'price-desc', label: 'Price: High to Low' },
+  { id: 'alpha', label: 'Alphabetical' },
+];
+function ProductFilters({ filters, setFilters, products }) {
+  const countFor = (catName) => products.filter(p => p.category === catName).length;
+  const check = 'accent-[#A68A5B] w-3.5 h-3.5';
+  const label = 'text-xs text-cocoa/80 hover:text-cocoa cursor-pointer';
+  const section = 'mb-7';
+  const head = 'text-[10px] font-bold tracking-[0.3em] uppercase text-cocoa mb-3.5';
+  return (
+    <div>
+      <div className={section}>
+        <p className={head}>Category</p>
+        <div className="space-y-2.5">
+          {PRODUCT_CATEGORIES.map(c => (
+            <label key={c.slug} className="flex items-center gap-2.5">
+              <input type="checkbox" className={check}
+                checked={filters.categories.includes(c.name)}
+                onChange={e => setFilters(f => ({ ...f, categories: e.target.checked ? [...f.categories, c.name] : f.categories.filter(x => x !== c.name) }))}/>
+              <span className={label}>{c.name} <span className="text-cocoa/40">({countFor(c.name)})</span></span>
+            </label>
+          ))}
+        </div>
+      </div>
+      <div className={section}>
+        <p className={head}>Price</p>
+        <div className="space-y-2.5">
+          {PRICE_RANGES.map(r => (
+            <label key={r.id} className="flex items-center gap-2.5">
+              <input type="radio" name="price" className={check} checked={filters.price === r.id} onChange={() => setFilters(f => ({ ...f, price: r.id }))}/>
+              <span className={label}>{r.label}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+      <div className={section}>
+        <p className={head}>Collection</p>
+        <div className="space-y-2.5">
+          <label className="flex items-center gap-2.5">
+            <input type="checkbox" className={check} checked={filters.newArrivals} onChange={e => setFilters(f => ({ ...f, newArrivals: e.target.checked }))}/>
+            <span className={label}>New Arrivals</span>
+          </label>
+          <label className="flex items-center gap-2.5">
+            <input type="checkbox" className={check} checked={filters.bestsellers} onChange={e => setFilters(f => ({ ...f, bestsellers: e.target.checked }))}/>
+            <span className={label}>Best Sellers</span>
+          </label>
+          <label className="flex items-center gap-2.5">
+            <input type="checkbox" className={check} checked={filters.inStockOnly} onChange={e => setFilters(f => ({ ...f, inStockOnly: e.target.checked }))}/>
+            <span className={label}>In stock only</span>
+          </label>
+        </div>
+      </div>
+      <button onClick={() => setFilters(f => ({ ...f, categories: [], price: 'all', newArrivals: false, bestsellers: false, inStockOnly: false, q: '' }))}
+        className="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold hover:text-cocoa underline underline-offset-4">
+        Clear all filters
+      </button>
+    </div>
+  );
+}
+function Shop({ preset = null }) {
+  const route = useRoute();
+  const { products, loading, error } = useCatalog();
+  const [showFilters, setShowFilters] = useState(false);
+  const [filters, setFilters] = useState(() => ({
+    categories: preset && preset.type === 'product' ? [preset.name] : [],
+    price: 'all', inStockOnly: false, newArrivals: false, bestsellers: false,
+    q: route.query.get('q') || '', sort: 'featured',
+  }));
+  const title = preset ? preset.name : 'Shop All';
+  const subtitle = preset ? preset.description : 'Every Reviora piece, in one place. Find your next favourite.';
+  useSEO({ title, description: subtitle });
+  useEffect(() => { Analytics.track(preset ? 'category_view' : 'page_view', { page: 'shop', category: preset?.name }); }, [preset]);
+  const filtered = useMemo(() => {
+    const range = PRICE_RANGES.find(r => r.id === filters.price) || PRICE_RANGES[0];
+    let list = products.filter(p =>
+      (!filters.categories.length || filters.categories.includes(p.category)) &&
+      range.test(p) &&
+      (!filters.inStockOnly || isProductAvailable(p)) &&
+      (!filters.newArrivals || p.newArrival) &&
+      (!filters.bestsellers || p.bestseller) &&
+      matchesQuery(p, filters.q)
+    );
+    const sorters = {
+      'featured': (a, b) => (b.featured - a.featured) || (b.bestseller - a.bestseller) || a.name.localeCompare(b.name),
+      'newest': (a, b) => b.createdAt.localeCompare(a.createdAt),
+      'price-asc': (a, b) => a.price - b.price,
+      'price-desc': (a, b) => b.price - a.price,
+      'alpha': (a, b) => a.name.localeCompare(b.name),
+    };
+    return [...list].sort(sorters[filters.sort] || sorters.featured);
+  }, [products, filters]);
+  const activeChips = [
+    ...filters.categories.map(c => ({ label: c, clear: () => setFilters(f => ({ ...f, categories: f.categories.filter(x => x !== c) })) })),
+    ...(filters.price !== 'all' ? [{ label: PRICE_RANGES.find(r => r.id === filters.price).label, clear: () => setFilters(f => ({ ...f, price: 'all' })) }] : []),
+    ...(filters.newArrivals ? [{ label: 'New', clear: () => setFilters(f => ({ ...f, newArrivals: false })) }] : []),
+    ...(filters.bestsellers ? [{ label: 'Bestseller', clear: () => setFilters(f => ({ ...f, bestsellers: false })) }] : []),
+    ...(filters.inStockOnly ? [{ label: 'In stock', clear: () => setFilters(f => ({ ...f, inStockOnly: false })) }] : []),
+    ...(filters.q ? [{ label: `“${filters.q}”`, clear: () => setFilters(f => ({ ...f, q: '' })) }] : []),
+  ];
+  return (
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-8">
+      <Reveal>
+        <header className="text-center fade-up">
+          <p className="text-[10px] font-semibold tracking-[0.35em] uppercase text-gold flex items-center justify-center gap-2"><IconSparkle className="w-2.5 h-2.5"/>{preset ? 'Collection' : 'The Catalogue'}</p>
+          <h1 className="serif text-4xl md:text-5xl mt-3">{title}</h1>
+          <SparkleDivider className="mt-5"/>
+          <p className="mt-4 text-sm text-cocoa/70 max-w-xl mx-auto">{subtitle}</p>
+        </header>
+      </Reveal>
+      <div className="mt-10 grid lg:grid-cols-[240px_1fr] gap-8 lg:gap-12">
+        <aside className="hidden lg:block">
+          <div className="sticky top-24">
+            <ProductFilters filters={filters} setFilters={setFilters} products={products}/>
+          </div>
+        </aside>
+        <div>
+          <div className="flex flex-wrap items-center gap-3 justify-between">
+            <button onClick={() => setShowFilters(s => !s)} aria-expanded={showFilters}
+              className="lg:hidden inline-flex items-center gap-2 border border-beige rounded-full px-5 py-2.5 text-[10px] font-semibold tracking-[0.2em] uppercase hover:border-gold transition-colors bg-white">
+              Filters {activeChips.length > 0 && <span className="w-4 h-4 rounded-full bg-gold text-ivory text-[8px] flex items-center justify-center">{activeChips.length}</span>}
+            </button>
+            <label className="inline-flex items-center gap-2 ml-auto">
+              <span className="text-[10px] tracking-[0.2em] uppercase text-cocoa/50 hidden sm:inline">Sort</span>
+              <select value={filters.sort} onChange={e => setFilters(f => ({ ...f, sort: e.target.value }))}
+                className="bg-white border border-beige rounded-full px-4 py-2.5 text-[11px] tracking-wide outline-none focus:border-gold cursor-pointer transition-colors"
+                aria-label="Sort products">
+                {SORTS.map(s => <option key={s.id} value={s.id}>{s.label}</option>)}
+              </select>
+            </label>
+          </div>
+          {showFilters && (
+            <div className="lg:hidden mt-4 rounded-2xl border border-beige bg-white p-5 fade-up">
+              <ProductFilters filters={filters} setFilters={setFilters} products={products}/>
+            </div>
+          )}
+          {activeChips.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-4">
+              {activeChips.map(chip => (
+                <button key={chip.label} onClick={chip.clear}
+                  className="inline-flex items-center gap-1.5 bg-beige/50 border border-beige rounded-full px-3.5 py-1.5 text-[10px] tracking-[0.15em] uppercase hover:border-gold transition-colors">
+                  {chip.label} <IconClose className="w-3 h-3"/>
+                </button>
+              ))}
+            </div>
+          )}
+          <div className="mt-7">
+            {error ? <ErrorState/> : loading ? (
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">{Array.from({length:6}).map((_,i)=><SkeletonCard key={i}/>)}</div>
+            ) : filtered.length === 0 ? (
+              <EmptyState title="No pieces found." subtitle="Try another category or clear your filters."
+                action={<Btn variant="outline" size="sm" onClick={() => setFilters(f => ({ ...f, categories: [], price: 'all', newArrivals: false, bestsellers: false, inStockOnly: false, q: '' }))}>Clear Filters</Btn>}/>
+            ) : (
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                {filtered.map(p => <ProductCard key={p.id} product={p}/>)}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+function CategoryPage({ slug }) {
+  const cat = CATEGORIES.find(c => c.slug === slug);
+  if (!cat) return <NotFound/>;
+  return <Shop preset={cat}/>;
+}
+
+/* ================= product detail =================
+   No quantity selector (1 add = 1 piece). No swatch thumbnails.
+   Buy Now = direct Instagram DM redirect. */
+function ProductPage({ slug }) {
+  const { products } = useCatalog();
+  const { addToCart } = useCart();
+  const { loading, data: product, error } = useAsync(() => ProductService.getProductBySlug(slug), [slug]);
+  const available = product && isProductAvailable(product);
+  useSEO({ title: product ? product.name : 'Product', description: product ? product.description : undefined });
+  useEffect(() => { if (product) Analytics.track('product_view', { sku: product.sku, name: product.name }); }, [product]);
+  if (loading) return (
+    <main className="max-w-6xl mx-auto px-4 pt-10 pb-16 grid md:grid-cols-2 gap-10">
+      <div className="aspect-[4/5] rounded-3xl skeleton"/>
+      <div className="space-y-4 pt-2"><div className="h-4 w-24 skeleton rounded"/><div className="h-10 w-3/4 skeleton rounded"/><div className="h-5 w-28 skeleton rounded"/><div className="h-24 skeleton rounded"/><div className="h-12 w-full skeleton rounded-full"/></div>
+    </main>
+  );
+  if (error) return <main className="pt-20"><ErrorState onRetry={() => window.location.reload()}/></main>;
+  if (!product) return <NotFound message="This piece has wandered off."/>;
+  const related = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+  return (
+    <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-16">
+      <nav aria-label="Breadcrumb" className="text-[10px] tracking-[0.2em] uppercase text-cocoa/50 mb-6 md:mb-10">
+        <Link to="/" className="hover:text-gold">Home</Link><span className="mx-2">/</span>
+        <Link to={`/category/${CATEGORIES.find(c => c.name === product.category)?.slug || 'shop'}`} className="hover:text-gold">{product.category}</Link><span className="mx-2">/</span>
+        <span className="text-cocoa/80">{product.name}</span>
+      </nav>
+      <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
+        <Reveal>
+          <div>
+            <div className="rounded-3xl overflow-hidden border border-beige/70 bg-ivory aspect-[4/5] zoom-hover">
+              <ProductImage product={product} className="!scale-100 hover:!scale-[1.45]"/>
+            </div>
+            <p className="mt-3 text-[10px] text-cocoa/40 italic flex items-center gap-1.5">
+              <IconSearch className="w-3 h-3"/>Hover over the image to zoom into the details.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={120}>
+          <div>
+            <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gold">{product.category} · Made for her</p>
+            <h1 className="serif text-4xl md:text-5xl mt-3 leading-tight">{product.name}</h1>
+            <p className="mt-4 text-2xl">{formatPrice(product.price)} <span className="text-xs text-cocoa/50 tracking-widest uppercase ml-1">{product.currency}</span></p>
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <span className="text-[10px] tracking-[0.2em] uppercase text-cocoa/50">SKU · {product.sku}</span>
+              {available ? <Badge tone="gold">In Stock</Badge> : <Badge tone="cocoa">Sold Out</Badge>}
+            </div>
+            <SparkleDivider className="!justify-start mt-6"/>
+            <p className="mt-5 text-cocoa/80 leading-relaxed">{product.description}</p>
+            <dl className="mt-6 space-y-2 text-sm">
+              {product.material && <div className="flex gap-3"><dt className="text-[10px] tracking-[0.2em] uppercase text-cocoa/50 w-24 pt-0.5">Material</dt><dd className="text-cocoa/80">{product.material}</dd></div>}
+              {product.care && <div className="flex gap-3"><dt className="text-[10px] tracking-[0.2em] uppercase text-cocoa/50 w-24 pt-0.5">Care</dt><dd className="text-cocoa/80">{product.care}</dd></div>}
+            </dl>
+            <div className="mt-8 rounded-3xl border border-beige bg-ivory p-6">
+              <p className="serif text-xl">Want to order this piece?</p>
+              <p className="text-sm text-cocoa/70 mt-1">Buy Now takes you straight to our Instagram DMs — order confirmed on screen.</p>
+              <div className="mt-5 grid sm:grid-cols-3 gap-2.5">
+                <BuyNowButton product={product} className="w-full"/>
+                <Btn variant="gold" className="w-full" disabled={!available}
+                  ariaLabel={available ? `Add ${product.name} to cart` : `${product.name} is sold out`}
+                  onClick={() => available && addToCart(product)}>
+                  Add to Cart
+                </Btn>
+                <Btn href={InstagramService.dmUrl()} variant="outline" className="w-full"
+                  onClick={() => Analytics.track('instagram_click', { context: 'pdp_dm', sku: product.sku })}>
+                  DM to Order
+                </Btn>
+              </div>
+              {!available && <p className="mt-4 text-xs text-cocoa/60">This piece is currently sold out — DM us to be notified when it's back.</p>}
+              <p className="mt-4 text-[11px] text-cocoa/55 flex items-center gap-2">
+                <IconInstagram className="w-3.5 h-3.5 text-gold"/>@{INSTAGRAM_USERNAME} · Payment & shipping confirmed in DM
+              </p>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[11px] tracking-[0.15em] uppercase">
+              <Link to="/shipping" className="text-cocoa/60 hover:text-gold transition-colors">Shipping & Delivery</Link>
+              <Link to="/returns" className="text-cocoa/60 hover:text-gold transition-colors">Returns & Exchange</Link>
+              <Link to="/care" className="text-cocoa/60 hover:text-gold transition-colors">Jewellery Care</Link>
+              <Link to="/terms" className="text-cocoa/60 hover:text-gold transition-colors">Terms</Link>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+      {related.length > 0 && (
+        <section className="mt-20 md:mt-28">
+          <Reveal><SectionHeading eyebrow="Complete the look" title="You may also love" align="left" linkTo={`/category/${CATEGORIES.find(c => c.name === product.category)?.slug}`} linkLabel="View category"/></Reveal>
+          <Reveal delay={100}><ProductRow products={related}/></Reveal>
+        </section>
+      )}
+    </main>
+  );
+}
+
+/* ================= static pages ================= */
+function About() {
+  useSEO({ title: 'About Reviora' });
+  return (
+    <main>
+      <PageHero eyebrow="Our story" title="About Reviora" subtitle="Minimal jewellery and ornaments, made for her everyday moments."/>
+      <Reveal><section className="max-w-2xl mx-auto px-4 prose">
+        <p>
+          Reviora Ornaments began with a simple idea — that the smallest details often complete the whole look.
+          We curate minimal, aesthetic jewellery and ornaments <strong>for women</strong>: pieces that feel premium
+          but stay approachable, timeless but never boring.
+        </p>
+        <p>
+          We are an Instagram-first brand. Our website is your catalogue — browse the collection, and order in a
+          single tap that takes you straight to our DMs. No accounts, no checkout maze. Just jewellery, and a conversation.
+        </p>
+        <p className="italic">More than just jewellery — it's the detail that makes the moment yours.</p>
+      </section></Reveal>
+      <Reveal delay={100}><section className="max-w-4xl mx-auto px-4 mt-14 grid sm:grid-cols-3 gap-4">
+        {[
+          { icon: <IconSparkle className="w-5 h-5"/>, t: 'Premium Quality', d: 'Pieces chosen for finish, feel and everyday wear.' },
+          { icon: <IconHeart className="w-5 h-5"/>, t: 'Timeless Designs', d: 'Minimal silhouettes that outlive the trend cycle.' },
+          { icon: <IconLeaf className="w-5 h-5"/>, t: 'For Every You', d: 'For every mood, every moment, every version of you.' },
+        ].map(v => (
+          <div key={v.t} className="rounded-2xl border border-beige/70 bg-white p-6 text-center transition-all duration-300 hover:border-gold/60 hover:shadow-lg hover:shadow-gold/10 hover:-translate-y-1">
+            <span className="w-11 h-11 rounded-full border border-gold/40 text-gold inline-flex items-center justify-center">{v.icon}</span>
+            <p className="serif text-xl mt-3">{v.t}</p>
+            <p className="text-xs text-cocoa/65 mt-2 leading-relaxed">{v.d}</p>
+          </div>
+        ))}
+      </section></Reveal>
+      <section className="text-center mt-16 pb-4">
+        <Btn href={INSTAGRAM_PROFILE_URL} variant="gold" onClick={() => Analytics.track('instagram_click', { context: 'about' })}>
+          <IconInstagram className="w-4 h-4"/>Follow the journey — @{INSTAGRAM_USERNAME}
+        </Btn>
+      </section>
+    </main>
+  );
+}
+function FAQ() {
+  useSEO({ title: 'FAQ' });
+  return (
+    <main>
+      <PageHero eyebrow="Help centre" title="Frequently Asked Questions" subtitle="Everything about ordering, delivery and caring for your pieces."/>
+      <Reveal><section className="max-w-3xl mx-auto px-4 pb-6">
+        <Accordion items={FAQS}/>
+        <div className="mt-10 rounded-2xl border border-beige bg-white p-6 text-center transition-all duration-300 hover:border-gold/50 hover:shadow-lg hover:shadow-gold/10">
+          <p className="serif text-xl">Still have a question?</p>
+          <p className="text-sm text-cocoa/70 mt-1">Need help? DM us on Instagram — we're happy to talk.</p>
+          <div className="mt-4"><Btn href={InstagramService.dmUrl()} variant="outline" size="sm"><IconInstagram className="w-3.5 h-3.5"/>@{INSTAGRAM_USERNAME}</Btn></div>
+        </div>
+      </section></Reveal>
+    </main>
+  );
+}
+function Shipping() {
+  useSEO({ title: 'Shipping & Delivery' });
+  return (
+    <main>
+      <PageHero eyebrow="Good to know" title="Shipping & Delivery"/>
+      <Reveal><section className="max-w-2xl mx-auto px-4 prose">
+        <div className="rounded-2xl border border-gold/40 bg-white p-5 mb-8">
+          <p className="text-sm italic text-cocoa/70">📦 Shipping information will be updated here. Please DM us on Instagram for the latest delivery estimate for your location.</p>
+        </div>
+        <h2>How shipping works</h2>
+        <ul>
+          <li>All orders are confirmed in Instagram DM before dispatch.</li>
+          <li><strong>Processing time:</strong> [update — e.g., dispatched within 1–2 business days of payment confirmation].</li>
+          <li><strong>Delivery time:</strong> [update — e.g., 3–7 business days depending on your pincode].</li>
+          <li><strong>Shipping charges:</strong> [update — e.g., free above ₹X / flat ₹XX].</li>
+          <li><strong>Tracking:</strong> tracking details are shared in DM once your order is dispatched [update].</li>
+        </ul>
+        <h2>Order status</h2>
+        <p>DM us on Instagram with your Order ID (e.g. RV-2026-0001) and we'll update you right away.</p>
+      </section></Reveal>
+    </main>
+  );
+}
+function Returns() {
+  useSEO({ title: 'Returns & Exchange' });
+  return (
+    <main>
+      <PageHero eyebrow="Good to know" title="Returns & Exchange" subtitle="We want you to love every Reviora piece."/>
+      <Reveal><section className="max-w-2xl mx-auto px-4 prose">
+        <div className="rounded-2xl border border-gold/40 bg-white p-5 mb-8">
+          <p className="text-sm italic text-cocoa/70">Please check our current return policy before placing an order — the final policy will be published here.</p>
+        </div>
+        <h2>Return policy</h2>
+        <ul>
+          <li><strong>Return window:</strong> [update — e.g., within X days of delivery].</li>
+          <li><strong>Eligibility:</strong> items must be unworn, unused and in original packaging [update].</li>
+          <li><strong>How to request:</strong> DM us on Instagram with your Order ID and photos [update].</li>
+          <li><strong>Non-returnable:</strong> [update — e.g., pierced earrings for hygiene reasons].</li>
+        </ul>
+        <h2>Exchanges</h2>
+        <ul>
+          <li>Exchanges are subject to stock availability [update].</li>
+          <li><strong>Exchange shipping:</strong> [update].</li>
+        </ul>
+        <h2>Damaged or wrong item?</h2>
+        <p>If your order arrives damaged or incorrect, DM us within 48 hours of delivery with photos and your Order ID — we'll make it right [update].</p>
+      </section></Reveal>
+    </main>
+  );
+}
+function Care() {
+  useSEO({ title: 'Jewellery Care' });
+  return (
+    <main>
+      <PageHero eyebrow="Make it last" title="Jewellery Care" subtitle="Small habits keep your pieces looking new."/>
+      <Reveal><section className="max-w-2xl mx-auto px-4 prose">
+        <ul>
+          <li><strong>Keep it dry.</strong> Remove jewellery before showering, swimming or sleeping.</li>
+          <li><strong>Last on, first off.</strong> Put jewellery on after perfume, lotion and makeup.</li>
+          <li><strong>Wipe after wear.</strong> A gentle wipe with a soft, dry cloth removes oils and moisture.</li>
+          <li><strong>Store separately.</strong> Keep pieces in a pouch or box, away from sunlight and humidity.</li>
+          <li><strong>Avoid chemicals.</strong> Household cleaners, chlorine and salt water can dull the finish.</li>
+        </ul>
+      </section></Reveal>
+    </main>
+  );
+}
+function Contact() {
+  useSEO({ title: 'Contact' });
+  const cards = [
+    { icon: <IconInstagram className="w-5 h-5"/>, t: 'Orders & Products', d: 'Questions about a piece, sizing or availability — DM us, we reply fastest here.' },
+    { icon: <IconSparkle className="w-5 h-5"/>, t: 'Order Status', d: 'DM us your Order ID (e.g. RV-2026-0001) and we will update you on your order.' },
+    { icon: <IconHeart className="w-5 h-5"/>, t: 'Something Else', d: 'Collaborations, gifting or just saying hi — our DMs are open.' },
+  ];
+  return (
+    <main>
+      <PageHero eyebrow="We'd love to hear from you" title="Contact Reviora" subtitle="The fastest way to reach us is always Instagram. No forms, no waiting queues — just a DM."/>
+      <Reveal><section className="max-w-4xl mx-auto px-4 grid sm:grid-cols-3 gap-4">
+        {cards.map(c => (
+          <div key={c.t} className="rounded-2xl border border-beige/70 bg-white p-6 text-center transition-all duration-300 hover:border-gold/60 hover:shadow-lg hover:shadow-gold/10 hover:-translate-y-1">
+            <span className="w-11 h-11 rounded-full border border-gold/40 text-gold inline-flex items-center justify-center">{c.icon}</span>
+            <p className="serif text-xl mt-3">{c.t}</p>
+            <p className="text-xs text-cocoa/65 mt-2 leading-relaxed">{c.d}</p>
+          </div>
+        ))}
+      </section></Reveal>
+      <section className="text-center mt-12 pb-4">
+        <Btn href={InstagramService.dmUrl()} variant="gold" size="lg" onClick={() => Analytics.track('instagram_click', { context: 'contact' })}>
+          <IconInstagram className="w-4 h-4"/>DM us on Instagram
+        </Btn>
+        <p className="mt-3 text-[10px] tracking-[0.25em] uppercase text-cocoa/50">@{INSTAGRAM_USERNAME}</p>
+      </section>
+    </main>
+  );
+}
+function Terms() {
+  useSEO({ title: 'Terms & Conditions' });
+  return (
+    <main>
+      <PageHero eyebrow="The fine print" title="Terms & Conditions" subtitle="Last updated: [add date before launch]"/>
+      <Reveal><section className="max-w-2xl mx-auto px-4 prose">
+        <h2>1. Ordering</h2>
+        <ul>
+          <li>All orders are placed through <strong>Instagram DM — @revioraornaments</strong>.</li>
+          <li>Tapping “Buy Now” or “DM to Buy” takes you directly to our Instagram DM chat; your order summary is displayed on the website when you tap.</li>
+          <li>An order is final only after we confirm availability, total and payment in DMs.</li>
+        </ul>
+        <h2>2. Payment & Cash on Delivery</h2>
+        <ul>
+          <li><strong>Cash on Delivery (COD) is not provided.</strong></li>
+          <li>After you DM us, we confirm your order details and the final total.</li>
+          <li><strong>Payment is completed after you DM us</strong> — we share the payment details (UPI / bank transfer) in DM once your order is confirmed.</li>
+          <li>Orders are dispatched only after payment is received and confirmed.</li>
+          <li>Never share payment information with any account other than our official handle, <strong>@revioraornaments</strong>.</li>
+        </ul>
+        <h2>3. Prices & Availability</h2>
+        <ul>
+          <li>All prices are listed in INR and may change without prior notice.</li>
+          <li>Stock shown on the website is indicative — final availability is confirmed in DMs before payment.</li>
+          <li>Products may be added, removed or updated at any time.</li>
+        </ul>
+        <h2>4. Shipping</h2>
+        <p>Dispatch and delivery timelines are described on our <Link to="/shipping" className="text-gold underline underline-offset-4">Shipping & Delivery</Link> page. Shipping charges, if any, are confirmed in DM before payment.</p>
+        <h2>5. Returns & Exchanges</h2>
+        <p>Return and exchange terms are described on our <Link to="/returns" className="text-gold underline underline-offset-4">Returns & Exchange</Link> page. Please review it before ordering.</p>
+        <h2>6. Product Care</h2>
+        <p>Care instructions are provided on each product page and on our <Link to="/care" className="text-gold underline underline-offset-4">Jewellery Care</Link> page.</p>
+        <h2>7. Product Imagery & Colours</h2>
+        <ul>
+          <li>We present our pieces as accurately as possible, but slight colour variation can occur due to lighting and screen settings.</li>
+          <li>Some catalogue imagery may be illustrative until real photography is added.</li>
+        </ul>
+        <h2>8. Intellectual Property</h2>
+        <p>The Reviora Ornaments name, logo, website design and content belong to Reviora Ornaments and may not be copied or reused without permission.</p>
+        <h2>9. Privacy</h2>
+        <ul>
+          <li>This website does not create customer accounts and does not store personal data on our servers.</li>
+          <li>Your cart is stored only in your own browser (localStorage) — never sent anywhere.</li>
+          <li>Order details (name, address, phone) are collected only in Instagram DMs and used solely to fulfil your order [update as needed].</li>
+        </ul>
+        <h2>10. Contact</h2>
+        <p>For any question about these terms or your order, DM us on Instagram — <strong>@revioraornaments</strong>.</p>
+      </section></Reveal>
+    </main>
+  );
+}
+function NotFound({ message = 'This page wandered off.' }) {
+  useSEO({ title: 'Page Not Found' });
+  return (
+    <main className="max-w-xl mx-auto px-4 py-24 text-center fade-up">
+      <IconSparkle className="w-6 h-6 text-gold mx-auto twinkle"/>
+      <h1 className="serif text-4xl mt-6">{message}</h1>
+      <p className="text-cocoa/70 mt-3">Find your next favourite piece instead.</p>
+      <div className="mt-8 flex justify-center gap-3">
+        <Btn to="/shop">Shop the Collection</Btn>
+        <Btn href={InstagramService.dmUrl()} variant="outline"><IconInstagram className="w-4 h-4"/>DM Us</Btn>
+      </div>
+    </main>
+  );
+}
+
+/* ================= app ================= */
+class ErrorBoundary extends React.Component {
+  constructor(props) { super(props); this.state = { err: null }; }
+  static getDerivedStateFromError(err) { return { err }; }
+  render() {
+    if (this.state.err) {
+      return (
+        <div className="min-h-screen flex items-center justify-center px-4 text-center">
+          <div>
+            <IconSparkle className="w-6 h-6 text-gold mx-auto"/>
+            <h1 className="serif text-3xl mt-4">Something went wrong.</h1>
+            <p className="text-sm text-cocoa/60 mt-2">Please refresh the page and try again.</p>
+            <div className="mt-6"><Btn onClick={() => window.location.reload()}>Refresh</Btn></div>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+function App() {
+  const route = useRoute();
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => { setSearchOpen(false); setMenuOpen(false); }, [route.path]);
+  useEffect(() => {
+    const onKey = (e) => {
+      const tag = (e.target.tagName || '').toLowerCase();
+      if (e.key === '/' && tag !== 'input' && tag !== 'textarea') { e.preventDefault(); setSearchOpen(true); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+  const seg = route.path.split('/').filter(Boolean);
+  let page;
+  if (seg.length === 0) page = <Home/>;
+  else if (seg[0] === 'shop') page = <Shop/>;
+  else if (seg[0] === 'category' && seg[1]) page = <CategoryPage slug={seg[1]}/>;
+  else if (seg[0] === 'product' && seg[1]) page = <ProductPage slug={seg[1]}/>;
+  else if (seg[0] === 'about') page = <About/>;
+  else if (seg[0] === 'faq') page = <FAQ/>;
+  else if (seg[0] === 'shipping') page = <Shipping/>;
+  else if (seg[0] === 'returns') page = <Returns/>;
+  else if (seg[0] === 'care') page = <Care/>;
+  else if (seg[0] === 'contact') page = <Contact/>;
+  else if (seg[0] === 'terms') page = <Terms/>;
+  else page = <NotFound/>;
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header searchOpen={searchOpen} setSearchOpen={setSearchOpen} menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <div className="flex-1">{page}</div>
+      <Footer/>
+      <MenuDrawer open={menuOpen} onClose={() => setMenuOpen(false)}/>
+      <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)}/>
+      <FloatingInstagram/>
+    </div>
+  );
+}
+const Root = () => (
+  <ErrorBoundary>
+    <RouterProvider>
+      <CatalogProvider>
+        <ToastProvider>
+          <BuyNowProvider>
+            <CartProvider>
+              <App/>
+            </CartProvider>
+          </BuyNowProvider>
+        </ToastProvider>
+      </CatalogProvider>
+    </RouterProvider>
+  </ErrorBoundary>
+);
+ReactDOM.createRoot(document.getElementById('root')).render(<Root/>);
+</script>
+
+<!-- ==================== ROBUST CDN LOADER (3-CDN fallback) ==================== -->
+<script>
+(function () {
+  var REACT = [
+    'https://unpkg.com/react@18.3.1/umd/react.production.min.js',
+    'https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js'
+  ];
+  var REACT_DOM = [
+    'https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js',
+    'https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js'
+  ];
+  var BABEL = [
+    'https://unpkg.com/@babel/standalone@7.24.7/babel.min.js',
+    'https://cdn.jsdelivr.net/npm/@babel/standalone@7.24.7/babel.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.7/babel.min.js'
+  ];
+  var TAILWIND = ['https://cdn.tailwindcss.com/3.4.16'];
+
+  function loadScript(urls, onDone) {
+    var i = 0;
+    (function next() {
+      if (i >= urls.length) return onDone(false);
+      var s = document.createElement('script');
+      s.src = urls[i++];
+      s.onload = function () { onDone(true); };
+      s.onerror = next;
+      document.head.appendChild(s);
+    })();
+  }
+
+  function showBootError() {
+    var ld = document.getElementById('boot-loading');
+    var el = document.getElementById('boot-error');
+    if (ld) ld.style.display = 'none';
+    if (el) el.style.display = 'flex';
+  }
+
+  loadScript(TAILWIND, function (okTw) {
+    if (okTw && window.tailwind) {
+      tailwind.config = { theme: { extend: {
+        colors: { cream: '#F6EFE5', ivory: '#FFFDF9', cocoa: '#4A3B2A', gold: '#A68A5B', beige: '#DCCBB4' },
+        fontFamily: { serif: ['"Cormorant Garamond"', 'serif'], sans: ['Manrope', 'sans-serif'] }
+      } } };
+    }
+    loadScript(REACT, function (okR) {
+      if (!okR) return showBootError();
+      loadScript(REACT_DOM, function (okD) {
+        if (!okD) return showBootError();
+        loadScript(BABEL, function (okB) {
+          if (!okB) return showBootError();
+          try {
+            var src = document.getElementById('reviora-app').textContent;
+            var compiled = Babel.transform(src, { presets: ['react'] }).code;
+            var runner = document.createElement('script');
+            runner.text = compiled;
+            document.body.appendChild(runner);
+            var ld = document.getElementById('boot-loading');
+            if (ld) ld.remove();
+          } catch (e) {
+            console.error(e);
+            showBootError();
+          }
+        });
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
